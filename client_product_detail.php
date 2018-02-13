@@ -85,7 +85,7 @@
                     <form class="form-inline">
                       <div class="col-xl-4" style="margin-top:20px;">
                         <div class="form-group" style="padding:0; margin:0;">
-                          <label for="item_price">Item name</label>
+                          <label for="item_price" >Item name</label>
                         </div>
                       </div>
                       <div class="col-xl-8" style="margin-top:20px;">
