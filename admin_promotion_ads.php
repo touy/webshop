@@ -1,6 +1,6 @@
 <?php include 'type.php'; ?>
 <div class="container-fluid">
-  <div class="container">
+  <div class="container"> 
     <h1 class="text-center" style="margin-top:30px;">Admin promotion ads</h1>
     <div class="row">
       <div class="col-xl-3"></div>
