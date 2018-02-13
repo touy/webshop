@@ -1,0 +1,29 @@
+@font-face { font-family: Saysettha_OT;  src: url(Saysettha_OT.ttf); }
+.langlao{	font-family: Saysettha_OT;}
+
+.JBA{
+  float: left;
+  margin: auto;
+  height: 650px;
+  background-color: #34219f;
+}
+.text-font span{ font-family: Saysettha_OT; font-size: 10pt; }
+.icon_edit p a{ font-size: 40pt; color:#34219f;}
+
+.icon_edit p a:hover{ font-size: 50pt; color:#fb3c00; }
+.thead-inverse th{font-family: Saysettha_OT;}
+.aprove th{font-family: Saysettha_OT !important;}
+.button_profile a{color:red;}
+
+
+.button_profile{ display: block; width: 100px; height: 40px; position: relative; border: 2px solid #e73d3d; border-radius: 10px; margin-bottom: 30px; margin-left: 200px;}
+.button_profile .btn-go-to-store{ display: block; position: absolute; bottom: 6px; width: 100%; height: 100%; line-height: 40px; background-color: #1024d7; text-align:center; color:#fff; box-shadow: 0 6px 0 #34219f; border-radius: 8px; transition: all 0.01s linear;}
+.button_profile:active .btn-go-to-store{ bottom:0; box-shadow: 0 0 0 #f64e30;}
+
+.button_profile2{ display: block; width: 100px; height: 40px; position: relative; border: 2px solid #e73d3d; border-radius: 10px; margin-bottom: 30px; }
+.button_profile2 .btn-go-to-store{ display: block; position: absolute; bottom: 6px; width: 100%; height: 100%; line-height: 40px; background-color: #1024d7; text-align:center; color:#fff; box-shadow: 0 6px 0 #34219f; border-radius: 8px; transition: all 0.01s linear;}
+.button_profile2:active .btn-go-to-store{ bottom:0; box-shadow: 0 0 0 #f64e30;}
+
+.page-link { background-color:#34219f !important; color:#fff !important;}
+.page-link:hover { color:black !important; background-color: #fb3c00 !important;}
+.input_store input{ width:77%; border-top:none; border-left:none; border-right:none; border-color:#34219f; border-radius:7px; margin-top:1px !important;}
