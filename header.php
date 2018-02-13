@@ -1,17 +1,4 @@
-
-<!-- <div class="container-fluid" style="height:60px; background-color:#34219f;">
-  <div class="container">
-    <a href="login_frm.php">Login</a>
-    <a href="profile.php">profile</a>
-    <a href="store.php">store</a>
-    <a href="productdetails.php">productdetails</a>
-    <a href="client_product_detail.php">client product detail</a>
-    <a href="client_store.php">client store</a>
-    <a href="admin.php">admin </a>
-    <a href="admin_promotion_ads.php"> admin promotion</a>
-    <a href="admin_search_keyword.php">admin search</a>
-  </div>
-</div> -->
+ 
   <div class="container-fluid" style="background-color:#34219f; !important; border:2px solid; border-color:red; border-top:none; border-left:none; border-right:none;">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#34219f !important;">
