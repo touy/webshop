@@ -12,7 +12,7 @@
     <a href="admin_search_keyword.php">admin search</a>
   </div>
 </div> -->
-  <div class="container-fluid" style="background-color:#34219f; !important;">
+  <div class="container-fluid" style="background-color:#34219f; !important; border:2px solid; border-color:red; border-top:none; border-left:none; border-right:none;">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#34219f !important;">
         <a class="navbar-brand" href="#">Webpost</a>
@@ -24,8 +24,8 @@
             <li class="nav-item active">
               <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Store</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+            <li class="nav-item"><a class="nav-link" href="store.php">Store</a></li>
+            <li class="nav-item"><a class="nav-link" href="productdetails.php">Product</a></li>
             <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
