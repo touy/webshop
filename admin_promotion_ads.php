@@ -38,7 +38,7 @@
                 <a class="" href="#"><i class="text-center far fa-edit" style=" margin-left:30px;"></i></a>
                 <a class="" href="#"><i class="text-center far fa-trash-alt" style=" margin-left:30px;"></i></a>
                 <a class="" href="#"><i class="text-center far fa-save" style=" margin-left:30px;"></i></a>
-              </p>
+            </p>
           </div>
         </div>
       </div>

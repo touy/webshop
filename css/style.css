@@ -21,8 +21,7 @@
 
 
 .text-font span{ font-family: Saysettha_OT; font-size: 10pt; }
-.icon_edit p a{ font-size: 40pt; color:#3 !important4219f;}
-
+.icon_edit p a{ font-size: 40pt;}
 .icon_edit p a:hover{ font-size: 50pt; color:#fb3c00; }
 .thead-inverse th{font-family: Saysettha_OT;}
 .aprove th{font-family: Saysettha_OT !important;}
@@ -48,3 +47,11 @@
   font-size: 16px; padding: 10px; background: #34219f; font-weight: bold; cursor: pointer; outline: none; -webkit-border-top-right-radius: 10px; -webkit-border-bottom-right-radius:10px;
   -moz-border-radius-topright:10px; -moz-border-radius-bottomright:10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
 #searchBtn:hover { background: #fb3c00;}
+
+/* footer style */
+.change-footer li a{ text-decoration: none !important; color:#ffffff;}
+.change-footer li a:hover{ color:#fb3c00;}
+.change-footer ul { list-style-type: none!important;}
+
+.icon-footer p a{ font-size: 30pt; color:white;}
+.icon-footer p a:hover{ font-size: 40pt;color:#fb3c00; }

@@ -1,5 +1,4 @@
 <?php include 'type.php'; ?>
-
 <div class="container-fluid">
   <div class="container">
     <div class="col-xl-12">

@@ -21,7 +21,7 @@
             <input type="text" name="" value="">
             <input type="text" name="" value="">
             <input type="text" name="" value="">
-          </div>
+          </div> 
         </form>
       </div>
       <div class="col-xl-6" style="margin-top:30px;">
