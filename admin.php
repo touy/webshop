@@ -7,12 +7,8 @@
       <div class="row">
           <div class="col-xl-4"></div>
           <div class="col-xl-4" style="float:left; margin-top:30px;">
-            <form action="" class="search-form">
-                <div class="form-group has-feedback">
-                  <label for="search" class="sr-only">Sear</label>
-                  <input type="text" class="form-control" name="search" id="search" placeholder="&nbsp;&nbsp;search" style="border-radius:10px;">
-                  <i class="fas fa-search" style="position:absolute; margin-top:-26px; margin-left:3px; float:right;"></i>
-                </div>
+            <form class="lol" action="#" method="post">
+              <input type="text" name="" id="searchBar" placeholder="Search" value="" maxlength="25" autocomplete="off" onmousedown="" onblur=""/><input type="submit" id="searchBtn" name="" value="Go!" />
             </form>
           </div>
           <div class="col-xl-4"></div>

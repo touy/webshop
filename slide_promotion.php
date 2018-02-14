@@ -26,6 +26,10 @@
   </a>
 </div>
 
-<div class="row-fluid" style="background-color:green; margin-top:20px;" >
-  <img src="images/slide_small.png" alt="" style="margin-left:100px;">
+<div class="row-fluid" style="background-color:rgb(192, 190, 193); margin-top:20px; padding-top:60px; padding-bottom:40px; " >
+  <p>
+    <h1 class="text-center langlao">Promotion ດີໆທີ່ຈະມອບໃຫ້ທ່ານ</h1>
+    <h1 class="text-center langlao">ສິນຄ້າມາໃໝ່</h1>
+
+  </p>
 </div>

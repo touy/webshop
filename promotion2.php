@@ -45,15 +45,6 @@
     </style>
   </head>
   <body>
-    <div class="hr-header" style="height:100px; background-color:pink; margin-bottom:30px;">
-      <div class="row">
-        <div class="container">
-          <div class="col-xl-12 col-12">
-            <h1 class="text-center" style="margin-top:20px;">New Promotion & New Item</h1>
-          </div>
-        </div>
-      </div>
-    </div>
       <section id="pricing">
        <div class="container">
           <div class="row">
