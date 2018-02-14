@@ -1,6 +1,6 @@
 <?php include 'type.php'; ?>
 <div class="container-fluid">
-  <div class="container"> 
+  <div class="container">
     <h1 class="text-center" style="margin-top:30px;">Admin promotion ads</h1>
     <div class="row">
       <div class="col-xl-3"></div>
@@ -140,8 +140,8 @@
         </div>
       </div>
 
-      <div class="col-xl-4"></div>
-      <div class="col-xl-4" style="margin-left:30px;">
+      <div class="col-xl-4 col-4"></div>
+      <div class="col-xl-4 col-4">
         <nav aria-label="Page_number_profile" >
           <ul class="pagination">
             <li class="page-item" ><a class="page-link" href="#">Previous</a></li>

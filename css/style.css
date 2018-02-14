@@ -7,10 +7,21 @@
 .header_drop  ul li a:hover{ color:#fb3c00 !important; transition: 0.5s;}
 .dropdown-menu { background-color: #34219f !important;}
 .dropdown-menu a:hover{  background-color: #e6e0dd !important;  transition: 0.5s;  }
+.btn .btn-outline-success .my-2 .my-sm-0:hover{background-color: red !important;}
+.bg-light h1{color:#ffffff;}
+
+#searchBar-header{ border:3px solid #34219f; border-right: none; font-size: 16px; padding: 10px;
+  outline: none; width: 250px; -webkit-border-top-left-radius:10px; -webkit-border-bottom-left-radius:10px;
+  -moz-border-radius-topleft:10px; -moz-border-radius-bottomleft:10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;}
+#searchBtn-header { border:3px solid #34219f; border-color: border-right: none; border-left:none; color:#ffffff; font-size: 16px; padding: 10px; background: #34219f; font-weight: bold; cursor: pointer; outline: none; -webkit-border-top-right-radius: 10px; -webkit-border-bottom-right-radius:10px;
+  -moz-border-radius-topright:10px; -moz-border-radius-bottomright:10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
+#searchBtn-header:hover { background: #fb3c00;}
+
+/* end style header */
 
 
 .text-font span{ font-family: Saysettha_OT; font-size: 10pt; }
-.icon_edit p a{ font-size: 40pt; color:#34219f;}
+.icon_edit p a{ font-size: 40pt; color:#3 !important4219f;}
 
 .icon_edit p a:hover{ font-size: 50pt; color:#fb3c00; }
 .thead-inverse th{font-family: Saysettha_OT;}
@@ -28,3 +39,12 @@
 .page-link { background-color:#34219f !important; color:#fff !important;}
 .page-link:hover { color:black !important; background-color: #fb3c00 !important;}
 .input_store input{ width:77%; border-top:none; border-left:none; border-right:none; border-color:#34219f; border-radius:7px; margin-top:1px !important;}
+
+/* input_tag_search style */
+#searchBar{ border:3px solid #34219f; border-bottom-color: #fb3c00; border-right: none; font-size: 16px; padding: 10px; outline: none;
+  width: 250px; -webkit-border-top-left-radius:10px; -webkit-border-bottom-left-radius:10px; -moz-border-radius-topleft:10px;
+  -moz-border-radius-bottomleft:10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;}
+#searchBtn { border:3px solid #fb3c00; border-top-color: #34219f; border-right: none; border-left:none; color:#ffffff;
+  font-size: 16px; padding: 10px; background: #34219f; font-weight: bold; cursor: pointer; outline: none; -webkit-border-top-right-radius: 10px; -webkit-border-bottom-right-radius:10px;
+  -moz-border-radius-topright:10px; -moz-border-radius-bottomright:10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
+#searchBtn:hover { background: #fb3c00;}

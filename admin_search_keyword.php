@@ -4,38 +4,46 @@
   <div class="container">
     <h1 class="text-center" style="margin:30px;">Admin search keyword list for ads</h1>
     <div class="row" style="margin-top:-40px;">
-      <div class=" col-xl-6" style="float:right; margin-top:40px; align:center;">
-        <div class="col-xl-4" style=" float:left;">
-          <label for="Storename">Store name:</label> <br>
-          <label for="Owner_name">Owner name:</label> <br>
-          <label for="Storename">Contact details:</label> <br>
-          <label for="Storename">Phone:</label> <br>
-          <label for="Storename">GPS Location:</label>
-          <label for="Storename">Contact details:</label>
-        </div>
-        <div class="input_store col-xl-8" style="float:right">
-          <input type="text" name="" value="">
-          <input type="text" name="" value="">
-          <input type="text" name="" value="">
-          <input type="text" name="" value="">
-          <input type="text" name="" value="">
-          <input type="text" name="" value="">
+      <div class=" col-xl-6 col-12" style="float:right; margin-top:40px; align:center;">
+        <form class="" action="#" method="post">
+          <div class="col-xl-4 col-6" style=" float:left;">
+            <label for="Storename">Store name:</label> <br>
+            <label for="Owner_name">Owner name:</label> <br>
+            <label for="Storename">Contact details:</label> <br>
+            <label for="Storename">Phone:</label> <br>
+            <label for="Storename">GPS Location:</label>
+            <label for="Storename">Contact details:</label>
+          </div>
+          <div class="input_store col-xl-8 col-6" style="float:right">
+            <input type="text" name="" value="">
+            <input type="text" name="" value="">
+            <input type="text" name="" value="">
+            <input type="text" name="" value="">
+            <input type="text" name="" value="">
+            <input type="text" name="" value="">
+          </div>
+        </form>
+      </div>
+      <div class="col-xl-6" style="margin-top:30px;">
+        <form class="lol" action="#" method="post">
+          <input type="text" name="" id="searchBar" placeholder="Search" value="" maxlength="25" autocomplete="off" onmousedown="" onblur=""/><input type="submit" id="searchBtn" name="" value="Go!" />
+        </form>
+        <div class="" style="margin-top:10px;">
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Item1</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Item2</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Item3</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Item4</a>
         </div>
       </div>
-      <div class="col-xl-6" style="height:200px; background-color:red; margin-top:30px;"></div>
     </div>
 
     <div class="row" style="margin-top:50px;">
-      <div class="col-xl-3">
-        <form action="" class="search-form">
-            <div class="form-group has-feedback">
-              <label for="search" class="sr-only">Sear</label>
-              <input type="text" class="form-control" name="search" id="search" placeholder="&nbsp;&nbsp;search" style="border-radius:10px;">
-              <i class="fas fa-search" style="position:absolute; margin-top:-26px; margin-left:3px; float:right;"></i>
-            </div>
+      <div class="col-xl-4">
+        <form class="lol" action="#" method="post">
+          <input type="text" name="" id="searchBar" placeholder="Search" value="" maxlength="25" autocomplete="off" onmousedown="" onblur=""/><input type="submit" id="searchBtn" name="" value="Go!" />
         </form>
       </div>
-      <div class="col-xl-9" style="margin-top:-30px;">
+      <div class="col-xl-8" style="margin-top:-5px;">
         <div class="icon_edit">
             <p class="text-center">
                 <a class="" href="#"><i class="text-center fas fa-plus-circle"></i></a>

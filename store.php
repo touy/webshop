@@ -6,24 +6,28 @@
       <h1 align="center" style="margin-top:30px;">Store</h1>
         <div class="row">
           <div class="col-xl-12 col-12">
-            <div class="col-xl-6" style="margin-top:20px; float:left;">
+            <div class="col-xl-6 col-12" style="margin-top:20px; float:left;">
               <img class="responsive" src="images/2.png" alt="" style="width:100%;">
             </div>
-            <div class="input_store col-xl-6" style="float:right; margin-top:40px; align:center;">
-              <label for="Storename">Store name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" name="" value="">
-              <!-- <div class="clearfix" style="margin-top:15px;"></div> -->
-              <label for="Owner_name">Owner name&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" name="" value="">
-              <!-- <div class="clearfix" style="margin-top:15px;"></div> -->
-              <label for="Storename">Contact details</label>
-              <input type="text" name="" value="" >
-              <label for="Storename">Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-              <input type="text" name="" value="">
-              <label for="Storename">GPS Location:&nbsp;&nbsp;</label>
-              <input type="text" name="" value="" >
-              <label for="Storename">Contact details</label>
-              <input type="text" name="" value="" >
+            <div class="input_store col-xl-6  col-12" style="float:right; margin-top:40px; align:center;">
+              <form class="" action="#" method="post">
+                <div class="col-xl-4 col-6" style=" float:left;">
+                  <label for="Storename">Store name:</label> <br>
+                  <label for="Owner_name">Owner name:</label> <br>
+                  <label for="Storename">Contact details:</label> <br>
+                  <label for="Storename">Phone:</label> <br>
+                  <label for="Storename">GPS Location:</label>
+                  <label for="Storename">Contact details:</label>
+                </div>
+                <div class="input_store col-xl-8 col-6" style="float:right">
+                  <input type="text" name="" value="">
+                  <input type="text" name="" value="">
+                  <input type="text" name="" value="">
+                  <input type="text" name="" value="">
+                  <input type="text" name="" value="">
+                  <input type="text" name="" value="">
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -31,14 +35,10 @@
 
       <div class="col-xl-12">
           <div class="row">
-            <div class="col-xl-6 col-12" style="margin-top:30px;">
-              <form action="" class="search-form">
-                <div class="form-group has-feedback">
-            		<label for="search" class="sr-only">Sear</label>
-            		<input type="text" class="form-control" name="search" id="search" placeholder="&nbsp;&nbsp;search" style="border-radius:10px;">
-              	<i class="fas fa-search" style="position:absolute; margin-top:-26px; margin-left:3px; float:right;"></i>
-            	</div>
-            </form>
+            <div class="col-xl-6 col-12" style="margin-top:30px; margin-left:40px;">
+              <form class="lol" action="#" method="post">
+                <input type="text" name="" id="searchBar" placeholder="Search" value="" maxlength="25" autocomplete="off" onmousedown="" onblur=""/><input type="submit" id="searchBtn" name="" value="Go!" />
+              </form>
             </div>
           </div>
         </div>
