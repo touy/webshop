@@ -11,6 +11,46 @@
 
     <title></title>
     <script src="ckeditor/ckeditor.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      function productdetailsform(){
+        var arr=[1];
+        arr.push({
+          image:'https://cdn.mos.cms.futurecdn.net/mma9LV9y6hgjqHj4653SgT-320-80.jpg',
+          detail1:'Gaming laptops have come a long way in recent years. No longer is a massive jet engine or two required to cope with the heat output of mobile graphics chips.',
+          detail2:'This is thanks in large part to Nvidias Pascal GPUs. The 10-series of graphics cards are more powerful and efficient than ever With higher clockspeeds and lower temperature output than previous generations, it is now possible to pack GTX 1060 and 1070 GPUs into laptops that measure around or sometimes less than an inch thick. Even better, those 10-series cards are not tuned-down mobile variants but rather every bit as powerful as their desktop counterparts.',
+          detaillist1:'of performance to get power draw even lower. These systems are thin, light, and quiet, yet still powerful.',
+          detaillist2:'You will find our favorite pick in that category here, and we have a dedicated Max-Q buying guide as well.',
+          detaillist3:'Just as impressive, laptop screens are getting closer and closer in feature set to their desktop counterparts. Features such as high refresh rates, 1440p or 4K resolutions, and G-Sync technology are no longer limited to the tabletop form factor.'
+        })
+
+        html="";
+        html+='<div class="col-xl-7 col-lg-7" style="float:left;">'
+          html+='<a href="#"> <img src="'+arr[1].image+'" alt="" style="width:100%;"> </a>'
+          html+='<p> <b>Price:	</b></p>'
+        html+='</div>'
+        html+='<div class="col-xl-5 col-lg-5" style="float:right;">'
+          html+='<span> <p><b>'+arr[1].detail1+'</b></p> </span>'
+          html+='<span> <p style="color:green;"><b> '+arr[1].detail2+'</b> <a href="#"></a> </p> </span>'
+          html+='<span>Style: 1TB+128GB SSD</span>'
+          html+='<span>'+arr[1].detaillist1+'</span>'
+            html+='<li>'+arr[1].detaillist2+'</li>'
+            html+='<li>'+arr[1].detaillist3+'</li>'
+            html+='<li>'+arr[1].detaillist1+'</li>'
+            html+='<li>'+arr[1].detaillist1+'</li>'
+        html+='</div>'
+
+        // alert(html);
+        $("#productform").append(html);
+      }
+      function clickproduct(){
+        productdetailsform();
+      }
+      $(document).ready(function() {
+        productdetailsform();
+      });
+    </script>
     <style media="screen">
       .button{
         display: block;
@@ -51,8 +91,8 @@
           </div>
           <div class="col-xl-12" style="margin-top:30px;">
             <div class="row">
-              <div class="col-xl-9 col-lg-9">
-                <div class="col-xl-7 col-lg-7" style="float:left;">
+              <div id="productform" class="col-xl-9 col-lg-9">
+                <!-- <div class="col-xl-7 col-lg-7" style="float:left;">
                   <a href="#"> <img src="images/2.png" alt="" style="width:100%;"> </a>
                   <p> <b>Price:	$1,499.00 & FREE Shipping</b></p>
                 </div>
@@ -65,7 +105,7 @@
                     <li>NVIDIA GeForce GTX 970M graphics with full Microsoft DirectX 12 support gives you efficient, powerful performance for heavy gaming or productive multitasking such as live streaming and video editing.</li>
                     <li>Ultra-portable design that fits snugly in a messenger bag or backpack. Whether you're waiting for your flight, kicking back at a café, or at a LAN tournament.</li>
                     <li>The Hyper Cool Duo-Copper cooling system uses heat pipes and a dual fan system to cool the CPU and GPU independently.</li>
-                </div>
+                </div> -->
               </div>
               <div class="col-xl-3 col-lg-3" style="height:600px; background-color:#34219f;"></div>
             </div>
@@ -76,9 +116,8 @@
             <div class="col-xl-12">
               <div class="col-xl-9 col-lg-9">
                 <form class="" action="#" method="post" style="float:left; width:100%;">
-
                   <h3 class="text-center langlao">ຟອມສະແດງຄວາມຄິດເຫັນຂອງລູກຄ້າ</h3>
-                  <div class="rate_star">
+                  <div class="star">
                     <?php include 'star_rating.php'; ?>
                   </div>
                   <div class="clearfix"></div>

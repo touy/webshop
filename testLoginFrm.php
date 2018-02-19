@@ -1,36 +1,42 @@
 
 <?php include 'type.php' ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript">
   function getDataLogin(){
     var userInfo={
-      username:'';
-      password:'',
+      username:$("#username").val(),
+      password:$("#password").val(),
       capta:'',
     };
-    $.get( "/login.php",)
-    userInfo
-    ,function(data ) {
-    alert( data );
-  }).fail(function(err) {
-    alert( alert );
-  })
-    // .done(function() {
-    //   alert( "second success" );
-    // })
-
-    // .always(function() {
-    //   alert( "finished" );
-    // })
-    ;
+    $.ajax({
+     type: "GET",
+     dataType: "json",
+     url: "login.php", //Relative or absolute path to response.php file
+     data: {data:userInfo},
+     success: function(data) {
+       alert(JSON.stringify(data));
+     },
+     error:function(err){
+       alert(JSON.stringify(err));
+     }
+   });
   }
   function loginSubmit(){
     getDataLogin();
   }
+  $(document).ready(function(){
+
+    $("#login").on('click',function(){
+      getDataLogin();
+      // alert('clicked');
+    });
+
+  });
 </script>
 <div class="container">
   <div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-sx-2 col-2 JBA"></div>
   <div class="col-xl-8 col-lg-8 col-md-8 col-sm-9 col-sx-10 col-10" style=" float:right; margin-top:100px;">
-    <form class="form-horizontal" role="form" method="POST" action="client_product_detail.php">
+    <form class="form-horizontal" role="form" method="POST" action="">
                 <div class="row">
                     <div class="col-md-4"></div>
                     <div class="col-md-8">
@@ -79,7 +85,7 @@
                 <div class="row" style="padding-top: 1rem">
                     <div class="col-md-4 col-sm-2 col-2"></div>
                     <div class="col-md-8 col-sm-10 col-10">
-                        <button type="submit" class="btn btn-success" style="background-color:#34219f;"><i class="fa fa-sign-in"></i> Login</button>
+                        <button type="submit" class="btn btn-success" id='login'  style="background-color:#34219f;"><i class="fa fa-sign-in"></i> Login</button>
                     </div>
                 </div>
                 <div class="row" style="padding-top: 1rem">

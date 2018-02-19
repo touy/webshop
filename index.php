@@ -14,7 +14,7 @@
   </head>
   <body>
   <?php include 'header.php' ?>
-  <?php include 'content1.php' ?>
+  <?php include 'testjs.php' ?>
   <?php include 'footer.php'; ?>
 
 

@@ -1,3 +1,4 @@
+<?php include 'header.php'; ?>
 <?php include 'type.php'; ?>
 <div class="container-fluid">
   <div class="container">
@@ -10,21 +11,77 @@
             </div>
             <div class="input_store col-xl-6  col-12" style="float:right; margin-top:40px; align:center;">
               <form class="" action="#" method="post">
-                <div class="col-xl-4 col-6" style=" float:left;">
-                  <label for="Storename">Store name:</label> <br>
-                  <label for="Owner_name">Owner name:</label> <br>
-                  <label for="Storename">Contact details:</label> <br>
-                  <label for="Storename">Phone:</label> <br>
-                  <label for="Storename">GPS Location:</label>
-                  <label for="Storename">Contact details:</label>
+                <div class="row">
+                  <div class="col-xl-3 col-lg-2 col-md-3 col-12">
+                    <label for="Storename">Store name:</label><br>
+                  </div>
+                  <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
+                    <input type="text" name="" id="storename" value="">
+                  </div>
                 </div>
-                <div class="input_store col-xl-8 col-6" style="float:right">
-                  <input type="text" name="" value="">
-                  <input type="text" name="" value="">
-                  <input type="text" name="" value="">
-                  <input type="text" name="" value="">
-                  <input type="text" name="" value="">
-                  <input type="text" name="" value="">
+                <div class="row">
+                  <div class="col-xl-3 col-lg-2 col-md-3 col-12">
+                    <label for="ownername">Ownername:</label><br>
+                  </div>
+                  <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
+                    <input type="text" name="" id="ownername" value="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-3 col-lg-2 col-md-3 col-12">
+                    <label for="contactdetails">contactdetails:</label><br>
+                  </div>
+                  <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
+                    <input type="text" name="" id="contactdetails" value="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-3 col-lg-2 col-md-3 col-12">
+                    <label for="phone">phone:</label><br>
+                  </div>
+                  <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
+                    <input type="text" name="" id="phone" value="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-3 col-lg-2 col-md-3 col-12">
+                    <label for="gps">GPS Location:</label><br>
+                  </div>
+                  <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
+                    <input type="text" name="" id="gpslocation" value="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-3 col-lg-2 col-md-3 col-12">
+                    <label for="description">description:</label><br>
+                  </div>
+                  <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
+                    <input type="text" name="" id="description" value="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-3 col-lg-2 col-md-3 col-12">
+                    <label for="score">score:</label><br>
+                  </div>
+                  <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
+                    <input type="text" name="" id="score" value="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-3 col-lg-2 col-md-3 col-12">
+                    <label for="otherlink">other link:</label><br>
+                  </div>
+                  <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
+                    <input type="text" name="" id="otherlink" value="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-3 col-lg-2 col-md-3 col-12">
+                    <label for="website">Website:</label><br>
+                  </div>
+                  <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
+                    <input type="text" name="" id="website" value="">
+                  </div>
                 </div>
               </form>
             </div>
@@ -43,87 +100,49 @@
         </div>
         <!-- end search -->
 
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-sx-12 col-12" style="">
-          <div class="row">
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-sx-6 col-6" style="margin-top:40px;">
-              <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" style="float:left; padding:0;  ">
+        <div class="row">
+          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-sx-6 col-6" style="margin-top:40px;">
+            <div class="row">
+              <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                 <img class="responsive" src="images/2.png" alt="" style="width:100%; ">
               </div>
-              <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 text-font" style="float:right;">
+              <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 text-font">
                 <span>ASUS 7250</span> <br>
                 <span>ລາຄາ:7ລ້ານກີບ</span> <br>
                 <span>ອອກໃໝ່ລ່າສຸດ</span> <br>
                 <span>ມີເຄື່ອງພ້ອມສົ່ງ</span> <br>
               </div>
-              <span class="clearfix"></span>
             </div>
-
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-sx-6 col-6" style="margin-top:40px;">
-              <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" style="float:left; padding:0;  ">
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-sx-6 col-6" style="margin-top:40px;">
+            <div class="row">
+              <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                 <img class="responsive" src="images/2.png" alt="" style="width:100%; ">
               </div>
-              <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 text-font" style="float:right;">
+              <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 text-font">
                 <span>ASUS 7250</span> <br>
                 <span>ລາຄາ:7ລ້ານກີບ</span> <br>
                 <span>ອອກໃໝ່ລ່າສຸດ</span> <br>
                 <span>ມີເຄື່ອງພ້ອມສົ່ງ</span> <br>
               </div>
-              <span class="clearfix"></span>
             </div>
-
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-sx-6 col-6" style="margin-top:40px;">
-              <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" style="float:left; padding:0;  ">
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-sx-6 col-6" style="margin-top:40px;">
+            <div class="row">
+              <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                 <img class="responsive" src="images/2.png" alt="" style="width:100%; ">
               </div>
-              <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 text-font" style="float:right;">
+              <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 text-font">
                 <span>ASUS 7250</span> <br>
                 <span>ລາຄາ:7ລ້ານກີບ</span> <br>
                 <span>ອອກໃໝ່ລ່າສຸດ</span> <br>
                 <span>ມີເຄື່ອງພ້ອມສົ່ງ</span> <br>
               </div>
-              <span class="clearfix"></span>
-            </div>
-
-
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-sx-6 col-6" style="margin-top:40px;">
-              <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" style="float:left; padding:0;  ">
-                <img class="responsive" src="images/2.png" alt="" style="width:100%; ">
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 text-font" style="float:right;">
-                <span>ASUS 7250</span> <br>
-                <span>ລາຄາ:7ລ້ານກີບ</span> <br>
-                <span>ອອກໃໝ່ລ່າສຸດ</span> <br>
-                <span>ມີເຄື່ອງພ້ອມສົ່ງ</span> <br>
-              </div>
-              <span class="clearfix"></span>
-            </div>
-
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-sx-6 col-6" style="margin-top:40px;">
-              <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" style="float:left; padding:0;  ">
-                <img class="responsive" src="images/2.png" alt="" style="width:100%; ">
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 text-font" style="float:right;">
-                <span>ASUS 7250</span> <br>
-                <span>ລາຄາ:7ລ້ານກີບ</span> <br>
-                <span>ອອກໃໝ່ລ່າສຸດ</span> <br>
-                <span>ມີເຄື່ອງພ້ອມສົ່ງ</span> <br>
-              </div>
-              <span class="clearfix"></span>
-            </div>
-
-            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-sx-6 col-6" style="margin-top:40px;">
-              <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12" style="float:left; padding:0;  ">
-                <img class="responsive" src="images/2.png" alt="" style="width:100%; ">
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 text-font" style="float:right;">
-                <span>ASUS 7250</span> <br>
-                <span>ລາຄາ:7ລ້ານກີບ</span> <br>
-                <span>ອອກໃໝ່ລ່າສຸດ</span> <br>
-                <span>ມີເຄື່ອງພ້ອມສົ່ງ</span> <br>
-              </div>
-              <span class="clearfix"></span>
             </div>
           </div>
         </div>
+
   </div>
 </div>
+
+<?php include 'footer.php'; ?>

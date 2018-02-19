@@ -11,6 +11,34 @@
 
     <title></title>
     <script src="ckeditor/ckeditor.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      function productform(){
+        var arr=[];
+        arr.push({
+          itemname:'Iphone X',
+          price:50000,
+          score:2000,
+          itemcode:'abc123'
+        });
+
+        $("#itemname").val(arr[0].itemname);
+        $("#price").val(arr[0].price);
+        $("#score").val(arr[0].score);
+        $("#itemcode").val(arr[0].itemcode);
+
+        // alert(html);
+        // $("#formclientproduct").append(html);
+      }
+      function clickclient(){
+        productform();
+      }
+      $(document).ready(function(){
+        productform();
+      });
+    </script>
+
     <style media="screen">
       .button{
         display: block;
@@ -65,10 +93,10 @@
         bottom:0;
         box-shadow: 0 0 0 #f64e30;
       }
-       
     </style>
   </head>
   <body>
+
 
     <div class="container-fluid">
       <div class="container"> <br>
@@ -85,35 +113,35 @@
                     <a href="#"> <img src="images/2.png" alt="" style="width:100%;"> </a>
                   </div>
                   <div class="col-xl-5">
-                      <form class="form-inline">
+                      <form id="#" class="form-inline">
                         <div class="col-xl-4" style="margin-top:20px;">
                           <div class="form-group">
-                            <label for="item_price" >Itemname:</label>
+                            <label for="itemname" >Itemname:</label>
                           </div>
                         </div>
                         <div class="col-xl-8 col-md-12" style="margin-top:20px;">
-                          <input type="text" id="#" class="form-control">
+                          <input type="text" id="itemname" class="form-control">
                         </div>
 
                         <div class="col-xl-4" style="margin-top:20px;">
                           <div class="form-group" style="padding:0; margin:0;">
-                            <label for="item_price">Price:</label>
+                            <label for="price">Price</label>
                           </div>
                         </div>
                         <div class="col-xl-8" style="margin-top:20px;">
-                          <input type="text" id="#" class="form-control">
+                          <input type="text" id="price" class="form-control">
                         </div>
 
                         <div class="col-xl-4" style="margin-top:20px;">
                           <div class="form-group" style="padding:0; margin:0;">
-                            <label for="item_price">Score:</label>
+                            <label for="Score">Score</label>
                           </div>
                         </div>
                         <div class="col-xl-8" style="margin-top:20px;">
-                          <input type="text" id="#" class="form-control">
+                          <input type="text" id="score" class="form-control">
                         </div>
                         <div class="col-xl-12" style="margin-top:20px;">
-                          <input type="text" id="#" class="form-control" placeholder="Item code" style="width:100%;">
+                          <input type="text" id="itemcode" class="form-control" placeholder="Item code" style="width:100%;">
                         </div>
 
                         <div class="go-t0-store2" style="margin-top:20px; margin-left:40px;">

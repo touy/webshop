@@ -1,58 +1,92 @@
 <?php include 'type.php'; ?>
 <?php include 'header.php'; ?>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+function adminkeywordform(){
+  var arr=[];
+    arr.push({
+        keyword:'002934',
+        startdate:'12.2.2018',
+        enddate:'12.2.2019',
+        itemname:'Nubia',
+        ownername:'Nokia',
+        store:'China'
+    });
+
+    $("#keyword").val(arr[0].keyword);
+    $("#price").val(arr[0].price);
+    $("#startdate").val(arr[0].startdate);
+    $("#enddate").val(arr[0].enddate);
+    $("#itemname").val(arr[0].itemname);
+    $("#ownername").val(arr[0].ownername);
+    $("#store").val(arr[0].store);
+
+    // alert(html);
+  // $( "#adminkeyword" ).append(html);
+
+}
+function clickLoad(){
+adminkeywordform();
+}
+$( document ).ready(function() {
+    adminkeywordform();
+});
+</script>
+
 <div class="container-fluid">
   <div class="container">
     <h1 class="text-center" style="margin:30px;">Admin search keyword list for ads</h1>
     <div class="row" style="margin-top:-40px;">
       <div class=" col-xl-6 col-12" style="float:right; margin-top:40px; align:center;">
-        <form class="" action="#" method="post">
+        <form id="adminkeyword" class="" action="#" method="post">
           <div class="row">
             <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-              <label for="Storename">Keyword:</label><br>
+              <label for="keyword">Keyword:</label><br>
             </div>
             <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
-              <input type="text" name="" value="">
+              <input id="keyword" type="text" name="" value="">
             </div>
           </div>
           <div class="row">
             <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-              <label for="Storename">Start date:</label><br>
+              <label for="startdate">Start date:</label><br>
             </div>
             <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
-              <input type="text" name="" value="">
+              <input id="startdate" type="text" name="" value="">
             </div>
           </div>
           <div class="row">
             <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-              <label for="Storename">End date:</label><br>
+              <label for="enddate">End date:</label><br>
             </div>
             <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
-              <input type="text" name="" value="">
+              <input id="enddate" type="text" name="" value="">
             </div>
           </div>
           <div class="row">
             <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-              <label for="Storename">Itemname:</label><br>
+              <label for="itemname">Itemname:</label><br>
             </div>
             <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
-              <input type="text" name="" value="">
+              <input id="itemname" type="text" name="" value="">
             </div>
           </div>
           <div class="row">
             <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-              <label for="Storename">owner:</label><br>
+              <label for="owner">owner:</label><br>
             </div>
             <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
-              <input type="text" name="" value="">
+              <input id="ownername" type="text" name="" value="">
             </div>
           </div>
           <div class="row">
             <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-              <label for="Storename">Store:</label><br>
+              <label for="store">Store:</label><br>
             </div>
             <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
-              <input type="text" name="" value="">
+              <input id="store" type="text" name="" value="">
             </div>
           </div>
         </form>
