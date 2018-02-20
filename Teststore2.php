@@ -7,6 +7,7 @@
     <title>Test store</title>
     <link href="https://rawgithub.com/hayageek/jquery-upload-file/master/css/uploadfile.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://malsup.github.com/jquery.form.js"></script>
 
 
@@ -139,7 +140,7 @@
           <h1 align="center" style="margin-top:30px;">Store</h1>
             <div class="row">
               <div class="col-xl-12 col-12">
-                <div class="col-xl-6" style="float:left; border:none;">
+                <div class="col-xl-6" style="margin-top:20px; float:left; border:none;">
                   <img class="img-responsive" id='photoprofile' src="images/2.png" alt="" style="width:100%;">
                   <img class='progressOff' id='loading' src='images/Loading_icon.gif' />
                   <form id="formupload" class="uploadImage" enctype="multipart/form-data" action="http://nonav.net:4000/upload_img" method="POST">

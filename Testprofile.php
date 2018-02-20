@@ -1,8 +1,14 @@
 <?php include 'type.php'; ?>
 <?php include 'header.php'; ?>
+<link href="https://rawgithub.com/hayageek/jquery-upload-file/master/css/uploadfile.css" rel="stylesheet"/>
+<!-- <script src="https://rawgithub.com/hayageek/jquery-upload-file/master/js/jquery.uploadfile.min.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.form.js"></script>
 
 <script type="text/javascript">
+var _arrObj=[];
+var _obj={};
+const host='http://nonav.net:4000';
 function getDataLogin(){
 //   var userInfo={
 //     username:'';
@@ -38,7 +44,7 @@ function loginSubmit(){
     $("#username").val(arr[0].username);
     $("#totalscore").val(arr[0].totalscore);
     $("#description").val(arr[0].description);
-
+    $('#photoprofile').attr('src',host+arr[0].photoprofile).show();
     // alert(html);
   //$("#profileform").append(html);
   }
@@ -46,11 +52,47 @@ function clickprofile(){
   profileform();
 }
 $( document ).ready(function(){
+
   profileform();
 
-});
-</script>
+  $("#formupload").submit(function(e){
+        e.preventDefault();
+        //var title = $('#title').val();
+        //alert('before submit');
+        $('#photoprofile').hide();
+        $('#loading').fadeIn(1000);
 
+        $(this).ajaxSubmit({
+          //data: {client: {username:'koui',logintoken:'abc',data:{}}},
+          contentType: 'application/json',
+          success: function(response){
+            //console.log('image uploaded and form submitted');
+            c=response;
+            //console.log(c.data.file);
+            //alert(c.data.file);
+            _obj.photoprofile=c.data.file;
+            $('#loading').fadeOut(1000);
+            $('#photoprofile').attr('src',host+c.data.file).show();
+          },
+          error:function(err){
+            console.log(err);
+            alert(err);
+          }
+      });
+    //alert ('submitted')
+    return false;
+  });
+});
+
+  // $('#formupload').submit(function(e){
+  //   $("#fileuploader").uploadFile({
+	// 	url:"http://nonav.net:4000/upload_img",
+	// 	fileName:"file_up"
+	// });
+
+
+
+</script>
 
 <div class="container-fluid">
   <div class="container">
@@ -59,9 +101,11 @@ $( document ).ready(function(){
       <div class="row">
         <div class="col-xl-12 col-12">
           <div class="col-xl-6" style="margin-top:20px; float:left;">
-            <img class="responsive" src="images/2.png" alt="" style="width:100%; ">
-            <form id="formupload" class="uploadImage" enctype="=multipart/form-data" action="upload_img" method="POST">
-              
+            <img class="responsive" id='photoprofile' src="images/2.png" alt="" style="width:100%; ">
+            <img class='progressOff' id='loading' src='images/Loading_icon.gif' />
+            <form id="formupload" class="uploadImage" enctype="multipart/form-data" action="http://nonav.net:4000/upload_img" method="POST">
+              <input type="file" name="file_up" id="file_up" value="">
+              <input type="submit" name="submit"  value="Submit">
             </form>
           </div>
           <div class="col-xl-6" style="float:right; margin-top:40px; align:center;">

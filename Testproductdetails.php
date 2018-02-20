@@ -11,11 +11,13 @@
 
     <title></title>
     <script src="ckeditor/ckeditor.js"></script>
+    <link href="https://rawgithub.com/hayageek/jquery-upload-file/master/css/uploadfile.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script>
 
     <script type="text/javascript">
       function productdetailsform(){
-        var arr=[1];
+        var arr=[];
         arr.push({
           image:'https://cdn.mos.cms.futurecdn.net/mma9LV9y6hgjqHj4653SgT-320-80.jpg',
           detail1:'Gaming laptops have come a long way in recent years. No longer is a massive jet engine or two required to cope with the heat output of mobile graphics chips.',
@@ -27,18 +29,18 @@
 
         html="";
         html+='<div class="col-xl-7 col-lg-7" style="float:left;">'
-          html+='<a href="#"> <img src="'+arr[1].image+'" alt="" style="width:100%;"> </a>'
+          html+='<a href="#"> <img src="'+arr[0].image+'" alt="" style="width:100%;"> </a>'
           html+='<p> <b>Price:	</b></p>'
         html+='</div>'
         html+='<div class="col-xl-5 col-lg-5" style="float:right;">'
-          html+='<span> <p><b>'+arr[1].detail1+'</b></p> </span>'
-          html+='<span> <p style="color:green;"><b> '+arr[1].detail2+'</b> <a href="#"></a> </p> </span>'
+          html+='<span> <p><b>'+arr[0].detail1+'</b></p> </span>'
+          html+='<span> <p style="color:green;"><b> '+arr[0].detail2+'</b> <a href="#"></a> </p> </span>'
           html+='<span>Style: 1TB+128GB SSD</span>'
-          html+='<span>'+arr[1].detaillist1+'</span>'
-            html+='<li>'+arr[1].detaillist2+'</li>'
-            html+='<li>'+arr[1].detaillist3+'</li>'
-            html+='<li>'+arr[1].detaillist1+'</li>'
-            html+='<li>'+arr[1].detaillist1+'</li>'
+          html+='<span>'+arr[0].detaillist1+'</span>'
+            html+='<li>'+arr[0].detaillist2+'</li>'
+            html+='<li>'+arr[0].detaillist3+'</li>'
+            html+='<li>'+arr[0].detaillist1+'</li>'
+            html+='<li>'+arr[0].detaillist1+'</li>'
         html+='</div>'
 
         // alert(html);

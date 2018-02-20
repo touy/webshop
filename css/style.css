@@ -4,7 +4,7 @@
 .JBA{ float: left; margin: auto; height: 650px; background-color: #34219f;}
 /* style nav-header */
 .header_drop  ul li a{ color:white !important;}
-.header_drop  ul li a:hover{ color:#fb3c00 !important; transition: 0.5s;}
+.header_drop  ul li a:hover{font-size: 14pt; color:#fb3c00 !important; transition: 0.5s; background-color: rgba(236, 183, 178, 0);}
 .dropdown-menu { background-color: #34219f !important;}
 .dropdown-menu a:hover{  background-color: #e6e0dd !important;  transition: 0.5s;  }
 .btn .btn-outline-success .my-2 .my-sm-0:hover{background-color: red !important;}
@@ -19,10 +19,12 @@
 
 /* end style header */
 
-
+.progressOff{
+  display:  none;
+}
 .text-font span{ font-family: Saysettha_OT; font-size: 10pt; }
-.icon_edit p a{ font-size: 40pt; transition: 0.5s;}
-.icon_edit p a:hover{ font-size: 50pt; color:#fb3c00;}
+.icon_edit p a{ font-size: 30pt;}
+.icon_edit p a:hover{ font-size: 40pt; color:#fb3c00; transition: 0.5s;}
 .thead-inverse th{font-family: Saysettha_OT;}
 .aprove th{font-family: Saysettha_OT !important;}
 .button_profile a{color:red;}
@@ -36,7 +38,7 @@
 .button_profile2:active .btn-go-to-store{ bottom:0; box-shadow: 0 0 0 #f64e30;}
 
 .page-link { background-color:#34219f !important; color:#fff !important;}
-.page-link:hover { color:black !important; background-color: #fb3c00 !important;}
+.page-link:hover { color:yellow !important; background-color: #fb3c00 !important; transition: 0.5s; font-size: 16pt;}
 .input_store input{ width:77%; border-top:none; border-left:none; border-right:none; border-color:#34219f; border-radius:7px;}
 
 /* input_tag_search style */
@@ -54,3 +56,11 @@
 
 .icon-footer p a{ font-size: 30pt; color:white;}
 .icon-footer p a:hover{ font-size: 40pt;color:#fb3c00; transition: 0.5s;}
+
+/* register style */
+@media(min-width: 768px) {
+  .field-label-responsive {
+    padding-top: .5rem;
+    text-align: right;
+  }
+}

@@ -1,6 +1,6 @@
 
 <?php include 'type.php' ?>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   function getDataLogin(){
     var userInfo={
       username:'';
@@ -26,7 +26,7 @@
   function loginSubmit(){
     getDataLogin();
   }
-</script>
+</script> -->
 <div class="container">
   <div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-sx-2 col-2 JBA"></div>
   <div class="col-xl-8 col-lg-8 col-md-8 col-sm-9 col-sx-10 col-10" style=" float:right; margin-top:100px;">
@@ -79,7 +79,7 @@
                 <div class="row" style="padding-top: 1rem">
                     <div class="col-md-4 col-sm-2 col-2"></div>
                     <div class="col-md-8 col-sm-10 col-10">
-                        <button type="submit" class="btn btn-success" style="background-color:#34219f;"><i class="fa fa-sign-in"></i> Login</button>
+                        <button type="submit" class="btn btn-success" style="background-color:#34219f;"><i class="fas fa-sign-in-alt"></i> Login</button>
                     </div>
                 </div>
                 <div class="row" style="padding-top: 1rem">
