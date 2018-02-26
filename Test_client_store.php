@@ -1,10 +1,16 @@
 <?php include 'type.php'; ?>
 <?php include 'header.php'; ?>
+<link href="https://rawgithub.com/hayageek/jquery-upload-file/master/css/uploadfile.css" rel="stylesheet"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.form.js"></script>
 
-<script>
-function storeform(){
-  var arr=[];
+
+<script type="text/javascript">
+var _arrObj=[];
+var _obj={};
+const host='http://nonav.net:4000';
+  function profileform1(){
+    var arr=[];
     arr.push({
       image:'https://socialmediaweek.org/london/files/2017/06/london2017.jpg',
       username:'Predetor',
@@ -16,10 +22,7 @@ function storeform(){
       score:10,
       otherlink:'www.google.com',
       website:'webpost.com'
-
     });
-
-    // $("#imageclient").text(arr[0].image);
     $("#username").val(arr[0].username);
     $("#ownername").val(arr[0].ownername);
     $("#contactdetails").val(arr[0].contactdetails);
@@ -30,104 +33,40 @@ function storeform(){
     $("#otherlink").val(arr[0].otherlink);
     $("#website").val(arr[0].website);
 
-    // html="";
-    // html+='<div class="row">'
-    //   html+='<div class="col-xl-6" style="margin-top:20px;">'
-    //     html+='<img class="responsive" src="'+arr[1].image+'" alt="" style="width:100%;">'
-    //   html+='</div>'
-    //   html+='<div class=" col-xl-6" margin-top:40px; align:center;">'
-    //     html+='<form class="" id="profileform" action="#" method="post">'
-    //       html+='<div class="row">'
-    //         html+='<div class="col-xl-3 col-lg-2 col-md-3 col-12">'
-    //           html+='<label for="Storename">Username:</label><br>'
-    //         html+='</div>'
-    //         html+='<div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">'
-    //           html+='<input type="text" name="" value="'+arr[1].storename+'">'
-    //         html+='</div>'
-    //       html+='</div>'
-    //       html+='<div class="row">'
-    //         html+='<div class="col-xl-3 col-lg-2 col-md-3 col-12">'
-    //           html+='<label for="Storename">Ownername:</label><br>'
-    //         html+='</div>'
-    //         html+='<div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">'
-    //           html+='<input type="text" name="" value="'+arr[1].ownername+'">'
-    //         html+='</div>'
-    //       html+='</div>'
-    //       html+='<div class="row">'
-    //         html+='<div class="col-xl-3 col-lg-2 col-md-3 col-12">'
-    //           html+='<label for="Storename">contactdetails:</label><br>'
-    //         html+='</div>'
-    //         html+='<div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">'
-    //           html+='<input type="text" name="" value="'+arr[1].contactdetails+'">'
-    //         html+='</div>'
-    //       html+='</div>'
-    //       html+='<div class="row">'
-    //         html+='<div class="col-xl-3 col-lg-2 col-md-3 col-12">'
-    //           html+='<label for="Storename">Phone:</label><br>'
-    //       html+='</div>'
-    //         html+='<div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">'
-    //           html+='<input type="text" name="" value="'+arr[1].phone+'">'
-    //         html+='</div>'
-    //       html+='</div>'
-    //       html+='<div class="row">'
-    //         html+='<div class="col-xl-3 col-lg-2 col-md-3 col-12">'
-    //           html+='<label for="Storename">GPS Location:</label><br>'
-    //         html+='</div>'
-    //         html+='<div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">'
-    //           html+='<input type="text" name="" value="'+arr[1].gps+'">'
-    //         html+='</div>'
-    //       html+='</div>'
-    //       html+='<div class="row">'
-    //         html+='<div class="col-xl-3 col-lg-2 col-md-3 col-12">'
-    //           html+='<label for="Storename">Description:</label><br>'
-    //         html+='</div>'
-    //         html+='<div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">'
-    //           html+='<input type="text" name="" value="'+arr[1].description+'">'
-    //         html+='</div>'
-    //       html+='</div>'
-    //       html+='<div class="row">'
-    //         html+='<div class="col-xl-3 col-lg-2 col-md-3 col-12">'
-    //           html+='<label for="Storename">Score:</label><br>'
-    //         html+='</div>'
-    //         html+='<div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">'
-    //           html+='<input type="text" name="" value="'+arr[1].score+'">'
-    //         html+='</div>'
-    //       html+='</div>'
-    //       html+='<div class="row">'
-    //         html+='<div class="col-xl-3 col-lg-2 col-md-3 col-12">'
-    //           html+='<label for="Storename">Other link:</label><br>'
-    //         html+='</div>'
-    //         html+='<div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">'
-    //           html+='<input type="text" name="" value="'+arr[1].otherlink+'">'
-    //         html+='</div>'
-    //       html+='</div>'
-    //       html+='<div class="row">'
-    //         html+='<div class="col-xl-3 col-lg-2 col-md-3 col-12">'
-    //           html+='<label for="Storename">Website:</label><br>'
-    //         html+='</div>'
-    //         html+='<div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">'
-    //           html+='<input type="text" name="" value="'+arr[1].website+'">'
-    //         html+='</div>'
-    //       html+='</div>'
-    //     html+='</form>'
-    //     html+='<p style="margin-top:30px;"><i align="left"><input type="checkbox" name="" value="">Active</i></p>'
-    //   html+='</div>'
-    // html+='</div>'
-    // html+='<div class="clearfix">'
-    // html+='</div>'
-
-
-    // alert(html);
-  // $( "#formstore" ).append(html);
-
+  }
+function clickprofile(){
+  profileform1();
 }
-function clickLoad(){
-storeform();
-}
-$( document ).ready(function() {
-    storeform();
+$( document ).ready(function(){
+
+  profileform1();
+
+  $("#formupload").submit(function(e){
+        e.preventDefault();
+        $('#photoprofile').hide();
+        $('#loading').fadeIn(1000);
+
+        $(this).ajaxSubmit({
+          contentType: 'application/json',
+          success: function(response){
+            c=response;
+            _obj.photoprofile=c.data.file;
+            $('#loading').fadeOut(1000);
+            $('#photoprofile').attr('src',host+c.data.file).show();
+          },
+          error:function(err){
+            console.log(err);
+            alert(err);
+          }
+      });
+
+    return false;
+  });
 });
 </script>
+<style media="screen">
+  .row {margin-top:20px;}
+</style>
 <div class="container-fluid">
   <div class="container">
     <div class="col-xl-12">
@@ -135,10 +74,19 @@ $( document ).ready(function() {
         <div class="row">
           <div id="formstore" class="col-xl-12 col-12 ">
              <div class="row">
-              <div class="col-xl-6" style="margin-top:20px; ">
-                <img  class="responsive" src="images/2.png" alt="" style="width:100%;">
+              <div class="col-xl-6" style="margin-top:20px;">
+                <img class="img-responsive" id='photoprofile' src="images/2.png" alt="" style="width:100%;">
+                <img class='progressOff' id='loading' src='images/Loading_icon.gif' />
+                <form class="form-group" id="formupload" class="uploadImage" enctype="multipart/form-data" action="http://nonav.net:4000/upload_img" method="POST">
+                  <label class="btn btn-info border-top-0 border-left-0 border-right-0" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Browse 
+                    <input type="file" name="file_up" id="file_up" hidden>
+                  </label>
+                  <label class="btn btn-info border-top-0 border-left-0 border-right-0" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Save 
+                    <input type="submit" name="submit" hidden>
+                  </label>                              
+                </form>
               </div>
-              <div class=" col-xl-6" style=" margin-top:40px; align:center;">
+              <div class=" col-xl-6" style=" margin-top:40px;">
                 <form class="" id="profileform" action="#" method="post">
                   <div class="row">
                     <div class="col-xl-3 col-lg-2 col-md-3 col-12">
@@ -215,7 +163,7 @@ $( document ).ready(function() {
                 </form>
                 <p style="margin-top:30px;"><i align="left"><input type="checkbox" name="" value="">Active</i></p>
               </div>
-            </div> -->
+            </div>
              <div class="row">
               <div class="col-xl-6">
                 <textarea name="editor3" id="editor3" rows="10" cols="80" style="width:100%;">
@@ -230,6 +178,7 @@ $( document ).ready(function() {
             </div>
           </div>
         </div>
+    </div>
   </div>
 </div>
 

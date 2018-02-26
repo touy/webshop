@@ -1,4 +1,5 @@
 <?php include 'header.php'; ?>
+<?php include 'type.php'; ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -65,7 +66,7 @@
         bottom:0;
         box-shadow: 0 0 0 #f64e30;
       }
-       
+
     </style>
   </head>
   <body>
@@ -83,16 +84,22 @@
                 <div class="row">
                   <div class="col-xl-7">
                     <a href="#"> <img src="images/2.png" alt="" style="width:100%;"> </a>
+                    <form class="form-group" id="formupload" class="uploadImage" enctype="multipart/form-data" action="http://nonav.net:4000/upload_img" method="POST">
+                      <label class="btn btn-info border-top-0 border-left-0 border-right-0" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Browse 
+                        <input type="file" name="file_up" id="file_up" hidden>
+                      </label>
+                      <label class="btn btn-info border-top-0 border-left-0 border-right-0" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Save 
+                        <input type="submit" name="submit" hidden>
+                      </label>                              
+                    </form>
                   </div>
                   <div class="col-xl-5">
                       <form class="form-inline">
                         <div class="col-xl-4" style="margin-top:20px;">
-                          <div class="form-group">
                             <label for="item_price" >Itemname:</label>
-                          </div>
                         </div>
-                        <div class="col-xl-8 col-md-12" style="margin-top:20px;">
-                          <input type="text" id="#" class="form-control">
+                        <div class="col-xl-8 col-md-12">
+                          <input type="text" id="#" class="border-top-0 border-right-0 border-left-0 form-control">
                         </div>
 
                         <div class="col-xl-4" style="margin-top:20px;">
@@ -100,7 +107,7 @@
                             <label for="item_price">Price:</label>
                           </div>
                         </div>
-                        <div class="col-xl-8" style="margin-top:20px;">
+                        <div class="col-xl-8">
                           <input type="text" id="#" class="form-control">
                         </div>
 
@@ -109,7 +116,7 @@
                             <label for="item_price">Score:</label>
                           </div>
                         </div>
-                        <div class="col-xl-8" style="margin-top:20px;">
+                        <div class="col-xl-8">
                           <input type="text" id="#" class="form-control">
                         </div>
                         <div class="col-xl-12" style="margin-top:20px;">
@@ -135,7 +142,7 @@
           <div class="row">
             <div class="col-xl-12">
               <div class="col-xl-12">
-                <form class="" action="#" method="post" style="float:left; width:100%; height:100%;">
+                <form class="" action="#" method="post" style="float:left; width:100%;">
                   <h3 class="langlao">Description:</h3>
                   <textarea name="editor1" id="editor1" rows="20" cols="80">
                   </textarea>
@@ -146,12 +153,10 @@
                     <a href="" class="button"> <span class="btn-go-to-store langlao">ອັບໂຫລດ</span> </a>
                   </div>
                 </form>
-              </div>
 
-              <div class="col-xl-12">
                 <form class="" action="#" method="post" style="float:left; width:100%;">
-                  <h3 class="langlao">Short Description:</h3>
-                  <textarea name="editor2" id="editor2" rows="5" cols="80">
+                  <h3 class="langlao">Description:</h3>
+                  <textarea name="editor2" id="editor2" rows="20" cols="80">
                   </textarea>
                   <script>
                       CKEDITOR.replace( 'editor2' );
@@ -166,10 +171,6 @@
         </div>
       </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
 

@@ -93,21 +93,23 @@ $( document ).ready(function(){
 
 
 </script>
-
+<style media="screen">
+  .row {margin-top:20px;}
+</style>
 <div class="container-fluid">
   <div class="container">
     <div class="col-xl-12">
       <h1 class="text-center" style="margin-top:30px;">Profile</h1>
       <div class="row">
         <div class="col-xl-12 col-12">
-          <div class="col-xl-6" style="margin-top:20px; float:left;">
+          <!-- <div class="col-xl-6" style="margin-top:20px; float:left;">
             <img class="responsive" id='photoprofile' src="images/2.png" alt="" style="width:100%; ">
             <img class='progressOff' id='loading' src='images/Loading_icon.gif' />
             <form id="formupload" class="uploadImage" enctype="multipart/form-data" action="http://nonav.net:4000/upload_img" method="POST">
               <input type="file" name="file_up" id="file_up" value="">
               <input type="submit" name="submit"  value="Submit">
             </form>
-          </div>
+          </div> -->
           <div class="col-xl-6" style="float:right; margin-top:40px; align:center;">
             <form class="" id="profileform" action="#" method="post">
               <div class="row">
@@ -158,41 +160,36 @@ $( document ).ready(function(){
         <div class="row">
               <div class="col-xl-12">
                 <form method="POST" action="multiDelete.php">
-                  <table class="table">
-                    <thead class="thead-inverse">
-                      <tr>
-                        <th>#</th>
-                        <th>ປະເພດສິນຄ້າ</th>
-                        <th>ຊື່ສິນຄ້າ</th>
-                        <th>ຮູບສິນຄ້າ</th>
-                        <th>ລົບສິນຄ້າ</th>
-                        <th></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td><input type="checkbox" name="" value=""></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td><input type="checkbox" name="" value=""></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td ><input type="checkbox" name="" value=""></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
                 </form>
               </div>
               <div class="col-xl-4"></div>

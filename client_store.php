@@ -1,6 +1,8 @@
 <?php include 'type.php'; ?>
 <?php include 'header.php'; ?>
-
+<style media="screen">
+  .row {margin-top:20px;}
+</style>
 <div class="container-fluid">
   <div class="container">
     <div class="col-xl-12">
@@ -10,6 +12,14 @@
             <div class="row">
               <div class="col-xl-6" style="margin-top:20px; float:left;">
                 <img class="responsive" src="images/2.png" alt="" style="width:100%;">
+                <form class="form-group" id="formupload" class="uploadImage" enctype="multipart/form-data" action="http://nonav.net:4000/upload_img" method="POST">
+                  <label class="btn btn-info border-top-0 border-left-0 border-right-0" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Browse 
+                    <input type="file" name="file_up" id="file_up" hidden>
+                  </label>
+                  <label class="btn btn-info border-top-0 border-left-0 border-right-0" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Save 
+                    <input type="submit" name="submit" hidden>
+                  </label>                              
+                </form>
               </div>
               <div class=" col-xl-6" style="float:right; margin-top:40px; align:center;">
                 <form class="" id="profileform" action="#" method="post">
@@ -101,6 +111,7 @@
           </div>
         </div>
       </div>
+    </div>
   </div>
 </div>
 

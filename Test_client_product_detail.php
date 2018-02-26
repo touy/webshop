@@ -1,20 +1,26 @@
 <?php include 'header.php'; ?>
-<!doctype html>
+<?php include 'type.php'; ?>
+
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    <link href="https://rawgithub.com/hayageek/jquery-upload-file/master/css/uploadfile.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script>
+    <!-- Required meta tags
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script>  -->
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <title></title>
     <script src="ckeditor/ckeditor.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 
     <script type="text/javascript">
-      function productform(){
+    var _arrObj=[];
+    var _obj={};
+    const host='http://nonav.net:4000';
+      function profileform1(){
         var arr=[];
         arr.push({
           itemname:'Iphone X',
@@ -22,20 +28,42 @@
           score:2000,
           itemcode:'abc123'
         });
-
         $("#itemname").val(arr[0].itemname);
         $("#price").val(arr[0].price);
         $("#score").val(arr[0].score);
         $("#itemcode").val(arr[0].itemcode);
+        $('#photoprofile').attr('src',host+arr[0].photoprofile).show();
 
-        // alert(html);
-        // $("#formclientproduct").append(html);
       }
-      function clickclient(){
-        productform();
-      }
-      $(document).ready(function(){
-        productform();
+    function clickprofile(){
+      profileform1();
+    }
+    $( document ).ready(function(){
+
+      profileform1();
+
+      $("#formupload").submit(function(e){
+            e.preventDefault();
+            $('#photoprofile').hide();
+            //alert($('#loading'));
+            $('#loading').show(1000);
+
+            $(this).ajaxSubmit({
+              contentType: 'application/json',
+              success: function(response){
+                c=response;
+                _obj.photoprofile=c.data.file;
+                $('#loading').fadeOut(1000);
+                $('#photoprofile').attr('src',host+c.data.file).show();
+              },
+              error:function(err){
+                console.log(err);
+                alert(err);
+              }
+          });
+
+        return false;
+      });
       });
     </script>
 
@@ -96,8 +124,6 @@
     </style>
   </head>
   <body>
-
-
     <div class="container-fluid">
       <div class="container"> <br>
         <h2 class="text-center">Client Product Detail</h2>
@@ -110,7 +136,16 @@
               <div class="col-xl-9">
                 <div class="row">
                   <div class="col-xl-7">
-                    <a href="#"> <img src="images/2.png" alt="" style="width:100%;"> </a>
+                    <img class="img-responsive" id='photoprofile' src="images/2.png" alt="" style="width:100%;">
+                    <img class='progressOff' id='loading' src='images/Loading_icon.gif' />
+                    <form class="form-group" id="formupload" class="uploadImage" enctype="multipart/form-data" action="http://nonav.net:4000/upload_img" method="POST">
+                      <label class="btn btn-info border-top-0 border-left-0 border-right-0" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Browse 
+                        <input type="file" name="file_up" id="file_up" hidden>
+                      </label>
+                      <label class="btn btn-info border-top-0 border-left-0 border-right-0" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Save 
+                        <input type="submit" name="submit" hidden>
+                      </label>                              
+                    </form>
                   </div>
                   <div class="col-xl-5">
                       <form id="#" class="form-inline">
@@ -163,7 +198,7 @@
           <div class="row">
             <div class="col-xl-12">
               <div class="col-xl-12">
-                <form class="" action="#" method="post" style="float:left; width:100%; height:100%;">
+                <form class="" action="#" method="post" style="float:left; width:100%;">
                   <h3 class="langlao">Description:</h3>
                   <textarea name="editor1" id="editor1" rows="20" cols="80">
                   </textarea>
@@ -174,12 +209,10 @@
                     <a href="" class="button"> <span class="btn-go-to-store langlao">ອັບໂຫລດ</span> </a>
                   </div>
                 </form>
-              </div>
 
-              <div class="col-xl-12">
                 <form class="" action="#" method="post" style="float:left; width:100%;">
-                  <h3 class="langlao">Short Description:</h3>
-                  <textarea name="editor2" id="editor2" rows="5" cols="80">
+                  <h3 class="langlao">Description:</h3>
+                  <textarea name="editor2" id="editor2" rows="20" cols="80">
                   </textarea>
                   <script>
                       CKEDITOR.replace( 'editor2' );
@@ -195,9 +228,6 @@
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
 

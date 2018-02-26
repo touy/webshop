@@ -1,5 +1,8 @@
 <?php include 'header.php' ?>
 <?php include 'type.php'; ?>
+<style media="screen">
+  .row {margin-top:20px;}
+</style>
 <div class="container-fluid">
   <div class="container">
     <h1 class="text-center" style="margin-top:30px;">Admin promotion ads</h1>
@@ -69,7 +72,7 @@
           <input type="text" name="" id="searchBar" placeholder="Search" value="" maxlength="25" autocomplete="off" onmousedown="" onblur=""/><input type="submit" id="searchBtn" name="" value="Go!" />
         </form>
       </div>
-
+    </div>
       <div class="row">
         <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-sx-6 col-6" style="margin-top:40px;">
           <div class="row">
@@ -112,18 +115,19 @@
         </div>
       </div>
 
-      <div class="col-xl-8 offset-xl-4" style="margin-top:20px;">
-        <nav aria-label="Page_number_profile" >
-          <ul class="pagination">
-            <li class="page-item" ><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
+      <div class="row">
+            <div class="col-xl-12 col-xl-offset-0">
+              <nav class="d-flex justify-content-center" aria-label="Page_number_profile">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+            </div>
       </div>
-    </div>
   </div>
 </div>
 <?php include 'footer.php'; ?>

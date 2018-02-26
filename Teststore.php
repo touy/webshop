@@ -9,17 +9,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://malsup.github.com/jquery.form.js"></script>
 
-
     <script type="text/javascript">
     var _arrObj=[];
     var _obj={};
     const host='http://nonav.net:4000';
-    function getDataLogin(){
-      ;
-    }
-    function loginSubmit(){
-      getDataLogin();
-    }
       function profileform1(){
         var arr=[];
         arr.push({
@@ -70,14 +63,9 @@
                 alert(err);
               }
           });
-
         return false;
       });
     });
-
-
-
-
     </script>
 
     <script>
@@ -130,7 +118,9 @@
         loadMe();
     });
     </script>
-
+    <style media="screen">
+      .row {margin-top:20px;}
+    </style>
   </head>
   <body>
     <div class="container-fluid">
@@ -142,9 +132,13 @@
                 <div class="col-xl-6" style="float:left; border:none;">
                   <img class="img-responsive" id='photoprofile' src="images/2.png" alt="" style="width:100%;">
                   <img class='progressOff' id='loading' src='images/Loading_icon.gif' />
-                  <form id="formupload" class="uploadImage" enctype="multipart/form-data" action="http://nonav.net:4000/upload_img" method="POST">
-                    <input type="file" name="file_up" id="file_up" value="">
-                    <input type="submit" name="submit"  value="Submit">
+                  <form class="form-group" id="formupload" class="uploadImage" enctype="multipart/form-data" action="http://nonav.net:4000/upload_img" method="POST">
+                      <label class="btn btn-info border-top-0 border-left-0 border-right-0" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Browse 
+                        <input type="file" name="file_up" id="file_up" hidden>
+                      </label>
+                      <label class="btn btn-info border-top-0 border-left-0 border-right-0" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Save 
+                        <input type="submit" name="submit" hidden>
+                      </label>                              
                   </form>
                 </div>
                 <div class="input_store col-xl-6  col-12" style="float:right; margin-top:30px; align:center;">
@@ -229,7 +223,7 @@
 
           <div class="col-xl-12 ">
               <div class="row">
-                <div class="col-xl-12 col-12" style="margin-top:30px; margin-left:40px;">
+                <div class="col-xl-12 col-12" style="margin-top:30px;">
                   <form class="lol" action="#" method="post">
                     <input type="text" name="" id="searchBar" placeholder="Search" value="" maxlength="25" autocomplete="off" onmousedown="" onblur=""/><input type="submit" id="searchBtn" name="" value="Go!" />
                   </form>

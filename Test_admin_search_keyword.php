@@ -34,7 +34,9 @@ $( document ).ready(function() {
     adminkeywordform();
 });
 </script>
-
+<style media="screen">
+  .row {margin-top:20px;}
+</style>
 <div class="container-fluid">
   <div class="container">
     <h1 class="text-center" style="margin:30px;">Admin search keyword list for ads</h1>
