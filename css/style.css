@@ -1,3 +1,5 @@
+body{margin:0; padding:0; background-color:#eaeaea !important;}
+
 @font-face { font-family: Saysettha_OT;  src: url(Saysettha_OT.ttf); }
 .langlao{	font-family: Saysettha_OT;}
 
@@ -13,7 +15,7 @@
 #searchBar-header{ border:3px solid #34219f; border-right: none; font-size: 16px; padding: 10px;
   outline: none;-webkit-border-top-left-radius:10px; -webkit-border-bottom-left-radius:10px;
   -moz-border-radius-topleft:10px; -moz-border-radius-bottomleft:10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;}
-#searchBtn-header { border:3px solid #34219f; border-color: border-right: none; border-left:none; color:#ffffff; font-size: 16px; padding: 10px; background: #34219f; font-weight: bold; cursor: pointer; outline: none; -webkit-border-top-right-radius: 10px; -webkit-border-bottom-right-radius:10px;
+#searchBtn-header { border:3px solid #34219f; border-color: border-right: none; border-left:none; color:#ffffff; font-size:16px; padding:10px; background:#34219f; font-weight:bold; cursor:pointer; outline:none; -webkit-border-top-right-radius: 10px; -webkit-border-bottom-right-radius:10px;
   -moz-border-radius-topright:10px; -moz-border-radius-bottomright:10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
 #searchBtn-header:hover { background: #fb3c00;}
 
@@ -38,7 +40,7 @@
 .button_profile2:active .btn-go-to-store{ bottom:0; box-shadow: 0 0 0 #f64e30;}
 
 .page-link { background-color:#34219f !important; color:#fff !important;}
-.page-link:hover { color:#e8e8e8 !important; background-color: #fb3c00 !important; transition: 0.5s; font-size: 16pt;}
+.page-link:hover { color:#e8e8e8 !important; background-color: #fb3c00 !important; transition: 0.3s; font-size: 15pt; border-bottom-color: #34219f !important; border:3px solid;}
 .input_store input{ width:77%; border-top:none; border-left:none; border-right:none; border-color:#34219f; border-radius:7px;}
 
 /* input_tag_search style */
@@ -64,3 +66,5 @@
     text-align: right;
   }
 }
+
+.buttonhover:hover{border-top:none !important; border-left:none !important; border-right:none !important; background-color:#fb3c00 !important;  border-bottom:3px solid; border-color:#34219f !important; font-size:13pt;}

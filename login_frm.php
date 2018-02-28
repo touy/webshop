@@ -1,32 +1,7 @@
 
 <?php include 'type.php' ?>
-<!-- <script type="text/javascript">
-  function getDataLogin(){
-    var userInfo={
-      username:'';
-      password:'',
-      capta:'',
-    };
-    $.get( "/login.php",)
-    userInfo
-    ,function(data ) {
-    alert( data );
-  }).fail(function(err) {
-    alert( alert );
-  })
-    // .done(function() {
-    //   alert( "second success" );
-    // })
 
-    // .always(function() {
-    //   alert( "finished" );
-    // })
-    ;
-  }
-  function loginSubmit(){
-    getDataLogin();
-  }
-</script> -->
+
 <div class="container">
   <div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-sx-2 col-2 JBA"></div>
   <div class="col-xl-8 col-lg-8 col-md-8 col-sm-9 col-sx-10 col-10" style=" float:right; margin-top:100px;">
@@ -79,13 +54,13 @@
                 <div class="row" style="padding-top: 1rem">
                     <div class="col-md-4 col-sm-2 col-2"></div>
                     <div class="col-md-8 col-sm-10 col-10">
-                        <button type="submit" class="btn btn-success" style="background-color:#34219f;"><i class="fas fa-sign-in-alt"></i> Login</button>
+                        <button type="submit" class="btn btn-success buttonhover" style="background-color:#34219f;"><i class="fas fa-sign-in-alt"></i> Login</button>
                     </div>
                 </div>
                 <div class="row" style="padding-top: 1rem">
                     <div class="col-md-4 col-sm-2 col-xs-2 col-2"></div>
                     <div class="col-md-8 col-sm-10 col-xs-10 col-10">
-                      <a href="index.php"><button2 type="" class="btn btn-success" style="background-color:#34219f;"><i class=""></i> back to index </button2></a>
+                      <a href="index.php"><button2 type="" class="btn btn-success buttonhover" style="background-color:#34219f;"><i class=""></i> back to index </button2></a>
                     </div>
                 </div>
             </form>

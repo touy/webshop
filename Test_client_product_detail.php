@@ -139,10 +139,10 @@
                     <img class="img-responsive" id='photoprofile' src="images/2.png" alt="" style="width:100%;">
                     <img class='progressOff' id='loading' src='images/Loading_icon.gif' />
                     <form class="form-group" id="formupload" class="uploadImage" enctype="multipart/form-data" action="http://nonav.net:4000/upload_img" method="POST">
-                      <label class="btn btn-info border-top-0 border-left-0 border-right-0" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Browse 
+                      <label class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Browse 
                         <input type="file" name="file_up" id="file_up" hidden>
                       </label>
-                      <label class="btn btn-info border-top-0 border-left-0 border-right-0" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Save 
+                      <label class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Save 
                         <input type="submit" name="submit" hidden>
                       </label>                              
                     </form>

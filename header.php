@@ -1,4 +1,10 @@
-
+<div class="container-fluid" style="background-color:#fb3c00 !important; border:2px solid; border-color:#fb3c00; border-top:none; border-left:none; border-right:none; height:35px;">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#fb3c00 !important;">
+      </nav>
+    </div>
+</div>
+    
   <div class="container-fluid" style="background-color:#34219f; !important; border:2px solid; border-color:#fb3c00; border-top:none; border-left:none; border-right:none;">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#34219f !important;">
@@ -16,7 +22,7 @@
             <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
           </ul>
           <form class="lol" action="#" method="post">
-            <input type="text" name="" id="searchBar-header" placeholder="Search" value="" maxlength="25" autocomplete="off" onmousedown="" onblur=""/><input type="submit" id="searchBtn-header" name="" value="Go!" />
+            <input type="text" name="" id="searchBar-header" placeholder="Search" value="" maxlength="100" autocomplete="off" onmousedown="" onblur=""/><input type="submit" id="searchBtn-header" name="" value="Go!" />
           </form>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">

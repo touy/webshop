@@ -85,10 +85,10 @@
                   <div class="col-xl-7">
                     <a href="#"> <img src="images/2.png" alt="" style="width:100%;"> </a>
                     <form class="form-group" id="formupload" class="uploadImage" enctype="multipart/form-data" action="http://nonav.net:4000/upload_img" method="POST">
-                      <label class="btn btn-info border-top-0 border-left-0 border-right-0" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Browse 
+                      <label class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Upload photo 
                         <input type="file" name="file_up" id="file_up" hidden>
                       </label>
-                      <label class="btn btn-info border-top-0 border-left-0 border-right-0" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Save 
+                      <label class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Save 
                         <input type="submit" name="submit" hidden>
                       </label>                              
                     </form>
@@ -108,7 +108,7 @@
                           </div>
                         </div>
                         <div class="col-xl-8">
-                          <input type="text" id="#" class="form-control">
+                          <input type="text" id="#" class="form-control border-top-0 border-left-0 border-right-0">
                         </div>
 
                         <div class="col-xl-4" style="margin-top:20px;">
@@ -117,7 +117,7 @@
                           </div>
                         </div>
                         <div class="col-xl-8">
-                          <input type="text" id="#" class="form-control">
+                          <input type="text" id="#" class="form-control border-top-0 border-left-0 border-right-0">
                         </div>
                         <div class="col-xl-12" style="margin-top:20px;">
                           <input type="text" id="#" class="form-control" placeholder="Item code" style="width:100%;">
