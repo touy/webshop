@@ -1,11 +1,5 @@
-<div class="container-fluid" style="background-color:#fb3c00 !important; border:2px solid; border-color:#fb3c00; border-top:none; border-left:none; border-right:none; height:35px;">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#fb3c00 !important;">
-      </nav>
-    </div>
-</div>
-    
-  <div class="container-fluid" style="background-color:#34219f; !important; border:2px solid; border-color:#fb3c00; border-top:none; border-left:none; border-right:none;">
+
+  <div class="container-fluid fixed-top" style="background-color:#34219f; !important; border-bottom:2px solid; border-color:#fb3c00 !important; border-top:30px solid; border-left:none; border-right:none;">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#34219f !important;">
         <a class="navbar-brand" href="#"> <h1 style="font-weight:100;"> <strong>Webpost</strong></h1> </a>
@@ -38,4 +32,8 @@
         </div>
       </nav>
     </div>
+    <div class="social_media"><?php include 'social_leftside.php'; ?></div>    
   </div>
+  
+  <div class="row" style="margin-top:61px;"></div>
+  <div class="clearfix"></div>

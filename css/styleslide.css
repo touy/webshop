@@ -1,4 +1,4 @@
-/* @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css); */
+body{font-family: "Times New Roman", Times, serif;}
 .col-item
 {
     border: 1px solid #E1E1E1;
@@ -18,7 +18,7 @@
     margin-top: 1px;
 }
 .col-item:hover {
-    background-color: rgba(255, 255, 255, 0.28) !important;
+    background-color: rgba(250, 184, 184, 0.151) !important;
     cursor: pointer;
 }
 
@@ -40,7 +40,7 @@
 
 .price-text-color
 {
-    color: #219FD1;
+    color: #34219f;
 }
 
 .col-item .info .rating
@@ -106,3 +106,26 @@
 {
     margin-right: 10px;
 }
+
+.font-size-icon{font-size: 5pt !important; color:white;}
+            .backgroun-icon-shopping{background-color:#34219f; color:white; border-bottom:3px solid !important; border-color:#fb3c00 !important;}
+            .backgroun-icon-shopping:hover{background-color:#fb3c00; border:3px solid !important; border-color:#34219f !important; border-left:none !important; border-right:none !important; border-top:none !important;}
+            .btn-add a:hover{color:#ffffff; font-size:13pt; transition:0.2s;}
+            .btn-details a:hover{color:#ffffff; font-size:13pt; transition:0.2s;}
+            .button{ display: block; width: 128px; height: 40px; position: relative; border: 2px solid #e73d3d; border-radius: 10px;}
+            .button .btn-go-to-store{ display: block; position: absolute; bottom: 6px; width: 100%;
+            height: 100%;
+            line-height: 40px;
+            background-color: #1024d7;
+            text-align:center;
+            color:#fff;
+            box-shadow: 0 6px 0 #34219f;
+            border-radius: 8px;
+            transition: all 0.01s linear;
+            }
+            .button:active .btn-go-to-store{
+            bottom:0;
+            box-shadow: 0 0 0 #f64e30;
+            }
+
+            

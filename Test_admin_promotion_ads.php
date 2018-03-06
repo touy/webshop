@@ -94,26 +94,26 @@ $( document ).ready(function() {
           </div>
         </div>
         <div class="row">
-          <div class="col-xl-3 col-lg-2 col-md-3 col-12">
+          <div class="col-xl-3 col-lg-2 col-md-3 col-12 mt-2">
             <label for="price">Price:</label><br>
           </div>
-          <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
+          <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store mt-2">
             <input id="price" type="text" name="" value="">
           </div>
         </div>
         <div class="row">
-          <div class="col-xl-3 col-lg-2 col-md-3 col-12">
+          <div class="col-xl-3 col-lg-2 col-md-3 col-12 mt-2">
             <label for="score">Score:</label><br>
           </div>
-          <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
+          <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store mt-2">
             <input id="score" type="text" name="" value="">
           </div>
         </div>
         <div class="row">
-          <div class="col-xl-3 col-lg-2 col-md-3 col-12">
+          <div class="col-xl-3 col-lg-2 col-md-3 col-12 mt-2">
             <label for="description">Description:</label><br>
           </div>
-          <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
+          <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store mt-2">
             <input id="description" type="text" name="" value="">
           </div>
         </div>

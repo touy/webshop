@@ -4,7 +4,7 @@
 </style>
 <div class="container">
   <div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-sx-2 col-2 JBA"></div>
-    <form class="form-horizontal" role="form" method="POST" action="/register">
+    <form class="form-horizontal" role="form" method="POST" action="#">
         <div class="row" >
             <div class="col-md-3"></div>
             <div class="col-md-6" style="margin-top:140px; color:#474747;">
@@ -21,7 +21,7 @@
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                         <div class="input-group-addon" style="width: 2.6rem;"><i class="fas fa-mobile"></i></div>
                         <input type="text" name="name" class="form-control" id="name"
-                               placeholder="Username" required autofocus>
+                               placeholder="Phone number" required autofocus>
                     </div>
                 </div>
             </div>

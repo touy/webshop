@@ -133,7 +133,7 @@
           </div>
           <div class="" style="margin-top:30px;">
             <div class="row">
-              <div class="col-xl-9">
+              <div class="col-xl-9 col-lg-9 col-12">
                 <div class="row">
                   <div class="col-xl-7">
                     <img class="img-responsive" id='photoprofile' src="images/2.png" alt="" style="width:100%;">
@@ -149,47 +149,47 @@
                   </div>
                   <div class="col-xl-5">
                       <form id="#" class="form-inline">
-                        <div class="col-xl-4" style="margin-top:20px;">
+                        <div class="col-xl-4 col-lg-12">
                           <div class="form-group">
                             <label for="itemname" >Itemname:</label>
                           </div>
                         </div>
-                        <div class="col-xl-8 col-md-12" style="margin-top:20px;">
-                          <input type="text" id="itemname" class="form-control">
+                        <div class="col-xl-8 col-lg-12 col-md-12 input_store mt-3">
+                          <input type="text" id="itemname" class=" form-control" style="width:100%;">
                         </div>
 
-                        <div class="col-xl-4" style="margin-top:20px;">
-                          <div class="form-group" style="padding:0; margin:0;">
+                        <div class="col-xl-4 mt-3">
+                          <div class="form-group">
                             <label for="price">Price</label>
                           </div>
                         </div>
-                        <div class="col-xl-8" style="margin-top:20px;">
-                          <input type="text" id="price" class="form-control">
+                        <div class="col-xl-8 col-12 input_store mt-3">
+                          <input type="text" id="price" class="form-control" style="width:100%;">
                         </div>
 
-                        <div class="col-xl-4" style="margin-top:20px;">
-                          <div class="form-group" style="padding:0; margin:0;">
-                            <label for="Score">Score</label>
+                          <div class="col-xl-4 mt-3" >
+                            <div class="form-group" style="padding:0; margin:0;">
+                              <label for="Score">Score</label>
+                            </div>
                           </div>
-                        </div>
-                        <div class="col-xl-8" style="margin-top:20px;">
-                          <input type="text" id="score" class="form-control">
-                        </div>
-                        <div class="col-xl-12" style="margin-top:20px;">
-                          <input type="text" id="itemcode" class="form-control" placeholder="Item code" style="width:100%;">
-                        </div>
+                          <div class="col-xl-8 input_store mt-3">
+                            <input type="text" id="score" class="form-control" style="width:100%;">
+                          </div>
+                          <div class="col-xl-12 input_store mt-3">
+                            <input type="text" id="itemcode" class="form-control" placeholder="Item code" style="width:100%;">
+                          </div>
 
-                        <div class="go-t0-store2" style="margin-top:20px; margin-left:40px;">
-                          <a href="#" class="button2"> <span class="btn-go-to-store2">Save</span> </a>
-                        </div>
-                        <div class="go-t0-store2" style="margin-top:20px; margin-left:30px;">
-                          <a href="login_frm.php" class="button2"> <span class="btn-go-to-store2">Cancel</span> </a>
-                        </div>
+                          <div class="go-t0-store2 mt-3" style="margin-left:40px;">
+                            <a href="#" class="button2"> <span class="btn-go-to-store2">Save</span> </a>
+                          </div>
+                          <div class="go-t0-store2 mt-3" style="margin-left:30px;">
+                            <a href="login_frm.php" class="button2"> <span class="btn-go-to-store2">Cancel</span> </a>
+                          </div>
                       </form>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3" style="height:350px; background-color:#34219f;"></div>
+              <div class="col-xl-3 col-lg-3 col-12" style="height:350px; background-color:#34219f;"></div>
             </div>
           </div>
 

@@ -32,6 +32,7 @@ h4,
 h5,
 .h5 {
   font-size: 14px;
+  color:#56555f!important;
 }
 h6,
 .h6 {
@@ -223,6 +224,16 @@ h6,
   }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md,
+  tr.hidden-md,
+  th.hidden-md,
+  td.hidden-md {
+    display: none !important;
+  }
+}
+
+
 @media (max-width: 767px) {
   .hidden-xs,
   tr.hidden-xs,
@@ -241,4 +252,4 @@ h6,
   }
 }
 
-/*# sourceMappingURL=bootstrap.css.map */
+            

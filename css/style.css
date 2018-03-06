@@ -1,4 +1,4 @@
-body{margin:0; padding:0; background-color:#eaeaea !important;}
+body{margin:0; padding:0; font-family: "Times New Roman", Times, serif; background-color:#eaeaea !important;}
 
 @font-face { font-family: Saysettha_OT;  src: url(Saysettha_OT.ttf); }
 .langlao{	font-family: Saysettha_OT;}
@@ -41,7 +41,7 @@ body{margin:0; padding:0; background-color:#eaeaea !important;}
 
 .page-link { background-color:#34219f !important; color:#fff !important;}
 .page-link:hover { color:#e8e8e8 !important; background-color: #fb3c00 !important; transition: 0.3s; font-size: 15pt; border-bottom-color: #34219f !important; border:3px solid;}
-.input_store input{ width:77%; border-top:none; border-left:none; border-right:none; border-color:#34219f; border-radius:7px;}
+.input_store input{ width:100%; border-top:none; border-left:none; border-right:none; border-bottom:3px solid; border-color:#34219f !important; border-radius:7px; background-color:#ffffff88;}
 
 /* input_tag_search style */
 #searchBar{ border:3px solid #34219f; border-bottom-color: #fb3c00; border-right: none; font-size: 16px; padding: 9px; outline: none;

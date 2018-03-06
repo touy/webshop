@@ -35,11 +35,20 @@
         border-radius: 8px;
         transition: all 0.01s linear;
       }
+      .button2 .btn-go-to-store2:hover{
+        background-color:#fb3c00;
+        border-bottom:1px solid; border-color:#34219f;
+        font-size:13pt;        
+      }
+      .button .btn-go-to-store:hover{
+        background-color:#fb3c00;
+        border-bottom:1px solid; border-color:#34219f;
+        font-size:13pt;
+      }
       .button:active .btn-go-to-store {
         bottom:0;
         box-shadow: 0 0 0 #f64e30;
       }
-
       .button2{
         display: block;
         width: 100px;
@@ -73,16 +82,16 @@
 
     <div class="container-fluid">
       <div class="container"> <br>
-        <h2 class="text-center">Client Product Detail</h2>
+        <h2 class="text-center">Client Product Detail</h2> 
         <div class="row">
           <div class="go-t0-store">
-            <a href="index.php" class="button"> <span class="btn-go-to-store">Go to Store</span> </a>
+            <a href="#" class="button"> <span class="btn-go-to-store">Go to Store</span> </a>
           </div>
           <div class="" style="margin-top:30px;">
             <div class="row">
-              <div class="col-xl-9">
+              <div class="col-xl-9 col-lg-9 col-12">
                 <div class="row">
-                  <div class="col-xl-7">
+                  <div class="col-xl-7 col-lg-7 col-12">
                     <a href="#"> <img src="images/2.png" alt="" style="width:100%;"> </a>
                     <form class="form-group" id="formupload" class="uploadImage" enctype="multipart/form-data" action="http://nonav.net:4000/upload_img" method="POST">
                       <label class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Upload photo 
@@ -93,22 +102,24 @@
                       </label>                              
                     </form>
                   </div>
-                  <div class="col-xl-5">
+                  <div class="col-xl-5 col-lg-5 col-12">
                       <form class="form-inline">
-                        <div class="col-xl-4" style="margin-top:20px;">
-                            <label for="item_price" >Itemname:</label>
+                      <div class="col-xl-4" style="margin-top:20px;">
+                          <div class="form-group" style="padding:0; margin:0;">
+                            <label for="item_price">Itemname:</label>
+                          </div>
                         </div>
-                        <div class="col-xl-8 col-md-12">
-                          <input type="text" id="#" class="border-top-0 border-right-0 border-left-0 form-control">
+                        <div class="col-xl-8 input_store">
+                          <input type="text" id="#" class="form-control border-top-0 border-left-0 border-right-0" style="width:100%;">
                         </div>
 
-                        <div class="col-xl-4" style="margin-top:20px;">
+                        <div class="col-xl-4 col-md-12" style="margin-top:20px;">
                           <div class="form-group" style="padding:0; margin:0;">
                             <label for="item_price">Price:</label>
                           </div>
                         </div>
-                        <div class="col-xl-8">
-                          <input type="text" id="#" class="form-control border-top-0 border-left-0 border-right-0">
+                        <div class="col-xl-8 col-md-12 input_store">
+                          <input type="text" id="#" class="form-control border-top-0 border-left-0 border-right-0" style="width:100%;">
                         </div>
 
                         <div class="col-xl-4" style="margin-top:20px;">
@@ -116,14 +127,14 @@
                             <label for="item_price">Score:</label>
                           </div>
                         </div>
-                        <div class="col-xl-8">
-                          <input type="text" id="#" class="form-control border-top-0 border-left-0 border-right-0">
+                        <div class="col-xl-8 input_store">
+                          <input type="text" id="#" class="form-control border-top-0 border-left-0 border-right-0" style="width:100%;">
                         </div>
-                        <div class="col-xl-12" style="margin-top:20px;">
+                        <div class="col-xl-12 input_store" style="margin-top:20px;">
                           <input type="text" id="#" class="form-control" placeholder="Item code" style="width:100%;">
                         </div>
 
-                        <div class="go-t0-store2" style="margin-top:20px; margin-left:40px;">
+                        <div class="go-t0-store2 jdk" style="margin-top:20px; margin-left:40px;">
                           <a href="#" class="button2"> <span class="btn-go-to-store2">Save</span> </a>
                         </div>
                         <div class="go-t0-store2" style="margin-top:20px; margin-left:30px;">
@@ -133,7 +144,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3" style="height:350px; background-color:#34219f;"></div>
+              <div class="col-xl-3 col-lg-3" style="height:350px; background-color:#34219f;"></div>
             </div>
           </div>
 

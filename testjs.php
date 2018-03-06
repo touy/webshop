@@ -1,3 +1,4 @@
+
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
@@ -42,12 +43,12 @@ function loadMe(){
 							 html+='<div class="row">'
 								 html+='<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-sx-12 col-12" style="margin-top:10px;">'
 									 html+='<div class="go-t0-store">'
-										 html+='<a href="productdetails.php" class="button"> <span class="btn-go-to-store langlao">ລາຍລະອຽດ</span> </a>'
+										 html+='<a href="productdetails.php" class="button"> <span class="btn-go-to-store langlao"><i class="fas fa-list"></i> ລາຍລະອຽດ</span> </a>'
 									 html+='</div>'
 								 html+='</div>'
 								 html+='<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-sx-12 col-12" style="margin-top:10px;">'
 									 html+='<div class="go-t0-store">'
-										 html+='<a href="#" class="button"> <span class="btn-go-to-store langlao">ເພີ່ມເຂົ້າກະຕ່າ</span> </a>'
+										 html+='<a href="#" class="button"> <span class="btn-go-to-store langlao"><i class="fas fa-shopping-cart"></i> ເພີ່ມ</span> </a>'
 									 html+='</div>'
 								 html+='</div>'
 							 html+='</div>'
@@ -66,11 +67,21 @@ $( document ).ready(function() {
 </script>
 <body>
 	<style media="screen">
-		.button{ display: block; width: 100px; height: 40px; position: relative; border: 2px solid #e73d3d; border-radius: 10px;}
+		.button{ display: block; width: 120px; height: 40px; position: relative; border: 2px solid #e73d3d; border-radius: 10px;}
 		.button .btn-go-to-store{ display: block; position: absolute; bottom: 6px; width: 100%; height: 100%; line-height: 40px;
 		  background-color: #1024d7; text-align:center; color:#fff; box-shadow: 0 6px 0 #34219f; border-radius: 8px;
 		  transition: all 0.01s linear;	}
 		.button:active .btn-go-to-store{ bottom:0; box-shadow: 0 0 0 #f64e30;}
+		.button2 .btn-go-to-store2:hover{
+        background-color:#fb3c00;
+        border-bottom:1px solid; border-color:#34219f;
+        font-size:13pt;        
+      }
+      .button .btn-go-to-store:hover{
+        background-color:#fb3c00;
+        border-bottom:1px solid; border-color:#34219f;
+        font-size:13pt;
+      }
 	</style>
 
 	<link rel="stylesheet" href="css/style.css">

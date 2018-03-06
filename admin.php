@@ -3,7 +3,7 @@
 
 <div class="container-fluid">
   <div class="container">
-    <h1 class="text-center">Admin aprove list</h1>
+    <h1 class="text-center mt-5">Admin aprove list</h1>
     <div class="col-xl-12">
       <div class="row">
           <div class="col-xl-12 col-xl-offset-0" style="margin-top:30px;">
