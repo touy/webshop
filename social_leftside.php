@@ -23,28 +23,28 @@
         cursor:pointer;
     }
     .leftside li:hover{
-        padding: 2px 20px;
+        padding: 2px 18px;
     }
-    .leftside li:nth-child(1){
+    .bg_facebook li:nth-child(1){
         background: #3b5998;
     }
-    .leftside li:nth-child(2){
+    .bg_line li:nth-child(1){
         background: #00c300;
     }
-    .leftside li:nth-child(3){
+    .bg_google li:nth-child(1){
         background: #d34836;
     }
-    .leftside li:nth-child(4){
+    .bg_whatsapp li:nth-child(1){
         background: #075e54;
     }
-    .leftside li:nth-child(5){
+    .bg_twitter li:nth-child(1){
         background: #00aced;
     }
-    .leftside li:nth-child(6){
+    .bg_wechat li:nth-child(1){
         background: #0eb419;
     }
        
-    .leftside li:nth-child(7){
+    .bg_instagram li:nth-child(1){
         background: #d6249f;
         background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
         box-shadow: 0px 3px 10px rgba(0,0,0,.25);
@@ -54,13 +54,13 @@
 <div class="row">
     <div class="leftside hidden-md hidden-sm hidden-xs">
         <ul>
-            <li  style="border-top:2px solid !important; border-color:red !important;"><i class="text-center fab fa-facebook-square"></i></li>
-            <li><i class="text-center fab fa-line"></i></li>
-            <li><i class="text-center fab fa-google-plus-square"></i></li>            
-            <li><i class="text-center fab fa-whatsapp"></i></li>
-            <li><i class="text-center fab fa-twitter"></i></li>     
-            <li><i class="text-center fab fa-weixin"></i></li>                   
-            <li><i class="text-center fab fa-instagram"></i></li>
+            <a href="https://www.facebook.com/" class="bg_facebook"><li  style="border-top:2px solid !important; border-color:red !important;"><i class="text-center fab fa-facebook-square"></i></li></a>
+            <a href="https://line.me/th/" class="bg_line"><li><i class="text-center fab fa-line"></i></li></a>
+            <a href="https://www.google.co.th/" class="bg_google"><li><i class="text-center fab fa-google-plus-square"></i></li></a>            
+            <a href="https://www.whatsapp.com/?l=th" class="bg_whatsapp"><li><i class="text-center fab fa-whatsapp"></i></li></a>
+            <a href="https://twitter.com/?lang=th" class="bg_twitter"><li><i class="text-center fab fa-twitter"></i></li></a>     
+            <a href="https://www.wechat.com/th/" class="bg_wechat"><li><i class="text-center fab fa-weixin"></i></li></a>                   
+            <a href="https://www.instagram.com/?hl=th" class="bg_instagram"><li><i class="text-center fab fa-instagram"></i></li></a>
         </ul>
     </div>
 </div>

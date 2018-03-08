@@ -75,6 +75,10 @@
         @media (min-width: 768px) and (max-width: 991px) {
         .refrigerator{ height:340px !important;} }    
         @media (max-width: 767px) {.refrigerator{ height:300px !important; } }
+        @media (max-width: 574px) {.refrigerator{ height:470px !important; } }
+        @media (max-width: 521px) {.refrigerator{ height:400px !important; } }
+        @media (max-width: 485px) {.refrigerator{ height:350px !important; } }
+        @media (max-width: 305px) {.refrigerator{ height:260px !important; } }
 
         @media (min-width: 1200px) { .TV{ height:240px!important; }}
         @media (min-width: 992px) and (max-width: 1199px) {

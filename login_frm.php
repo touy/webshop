@@ -3,9 +3,9 @@
 
 
 <div class="container">
-  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-sx-2 col-2 JBA"></div>
-  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-9 col-sx-10 col-10" style=" float:right; margin-top:100px;">
-    <form class="form-horizontal" role="form" method="POST" action="client_product_detail.php">
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-3 col-sx-2 col-2 JBA"></div>
+    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-9 col-sx-10 col-10" style=" float:right; margin-top:100px;">
+        <form class="form-horizontal" role="form" method="POST" action="client_product_detail.php">
                 <div class="row">
                     <div class="col-md-4"></div>
                     <div class="col-md-8">
@@ -28,16 +28,18 @@
                 </div>
                 <div class="row">
                     <div class="col-md-3"></div>
-                    <div class="col-md-9">
-                        <div class="form-group">
-                            <label class="sr-only" for="password">Password</label>
-                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                                <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
-                                <input type="password" name="password" class="form-control" id="password"
-                                       placeholder="Password" required>
+                        <div class="col-md-9">
+                            <div class="form-group">
+                                <label class="sr-only" for="password">Password</label>
+                                    <div class="input-group mb-2 mr-sm-2 mb-sm-0" id="show_hide_password">
+                                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
+                                            <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+                                            <div class="input-group-addon">
+                                                <a href="" class="btn btn-warning border-0" style="background-color:#fff; border:1px solid !important; border-color:#ced4da !important;"><i class="fas fa-eye" aria-hidden="true"></i></a>
+                                            </div>
+                                    </div>
                             </div>
                         </div>
-                    </div>
                 </div>
                 <div class="row" style="margin-left:40px;">
                     <div class="col-md-3 col-sm-12 col-12"></div>
@@ -63,6 +65,6 @@
                       <a href="index.php"><button2 type="" class="btn btn-success buttonhover" style="background-color:#34219f;"><i class=""></i> back to index </button2></a>
                     </div>
                 </div>
-            </form>
-  </div>
+        </form>
+    </div>   
 </div>
