@@ -1,5 +1,15 @@
-
+<script src="js/changelang_header.js">
+        loadDetails();
+        loadList();
+        reload();
+        loadLA();
+        loadEN();
+    </script>
   <div class="container-fluid fixed-top" style="background-color:#34219f; !important; border-bottom:2px solid; border-color:#fb3c00 !important; border-top:30px solid; border-left:none; border-right:none;">
+    <div class="icon_language float-right">
+      <a href="#" onclick='loadLA()'><img src="images/Flag of Laos.png" alt="" style="width:30px; height:30px;"></a>
+      <a href="#" onclick='loadEN()'><img src="images/flag-button-round-250.png" alt="" style="width:24px; height:24px;margin-top:2px;"></a>
+    </div>
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#34219f !important;">
         <a class="navbar-brand" href="#"> <h1 style="font-weight:100;"> <strong>Webpost</strong></h1> </a>
@@ -9,31 +19,30 @@
         <div class="collapse navbar-collapse header_drop" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+              <a id='home' class="nav-link langlao" href="index.php" >ໜ້າທຳອິດ <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="store.php">Store</a></li>
-            <li class="nav-item"><a class="nav-link" href="productdetails.php">Product</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+            <li class="nav-item"><a id='store' class="nav-link langlao" href="store.php">ຮ້ານຄ້າ</a></li>
+            <li class="nav-item"><a id='product' class="nav-link langlao" href="productdetails.php">ສິນຄ້າ</a></li>
+            <li class="nav-item"><a id='about' class="nav-link langlao" href="#">ກ່ຽວກັບພວກເຮົາ</a></li>
           </ul>
           <form class="lol" action="#" method="post">
-            <input type="text" name="" id="searchBar-header" placeholder="Search" value="" maxlength="100" autocomplete="off" onmousedown="" onblur=""/><input type="submit" id="searchBtn-header" name="" value="Go!" />
+            <input class="langlao" type="text" name="" id="searchBar-header" placeholder="ຄົ້ນຫາ" value="" maxlength="100" autocomplete="off" onmousedown="" onblur=""/><input type="submit" id="searchBtn-header" name="" value="Go!" />
           </form>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Please login
+              <a id='pleaseLogin' class="nav-link dropdown-toggle langlao" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-sign-in-alt" style="margin-right:3px;"></i>ເຂົ້າສູ່ລະບົບ
               </a>
               <div class="dropdown-menu " aria-labelledby="navbarDropdown" style="border:none;">
-                <a class="dropdown-item" href="login_frm.php">Login</a>
-                <a class="dropdown-item" href="#">Logout</a>
+                <a id='login' class="dropdown-item langlao" href="login_frm.php">ລ໋ອກອິນ</a>
+                <a id='register' class="dropdown-item langlao" href="#">ລົງທະບຽນ</a>
               </div>
             </li>
           </ul>
         </div>
       </nav>
     </div>
-    <div class="social_media"><?php include 'social_leftside.php'; ?></div>    
+    <!-- <div class="social_media"><?php include 'social_leftside.php'; ?></div>     -->
   </div>
   
-  <div class="row" style="margin-top:61px;"></div>
-  <div class="clearfix"></div>
+  <div class="class-fixed-top" style="height:120px;"></div>

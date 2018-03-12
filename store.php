@@ -1,21 +1,28 @@
 <?php include 'header.php'; ?>
 <?php include 'type.php'; ?>
-<style media="screen">
-  .row {margin-top:20px;}
+<style>
+  label, input {margin-top:14px;}
 </style>
-<div class="container-fluid">
+    <script src="js/changelang_store.js">
+        loadDetails();
+        loadList();
+        reload();
+        loadLA();
+        loadEN();
+    </script>
+<div class="container-fluid mt-6">
   <div class="container">
     <div class="col-xl-12">
-      <h1 align="center" style="margin-top:30px;">Store</h1>
+      <h1 id='titleStore' class="langlao" align="center" style="margin-top:30px;">ຮ້ານຄ້າ</h1>
         <div class="row">
           <div class="col-xl-12 col-12">
             <div class="col-xl-6 col-12" style="margin-top:20px; float:left;">
               <img class="responsive" src="images/2.png" alt="" style="width:100%;">
               <form class="form-group" id="formupload" class="uploadImage" enctype="multipart/form-data" action="http://nonav.net:4000/upload_img" method="POST">
-                <label class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Upload photo 
+                <label id='uploadphoto' class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover langlao" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;"><i class="fas fa-cloud-upload-alt"></i> ອັບໂຫລດຮູບພາບ 
                   <input type="file" name="file_up" id="file_up" hidden>
                 </label>
-                <label class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Save 
+                <label id='save' class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover langlao" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;"><i class="far fa-save"></i> ບັນທຶກ
                   <input type="submit" name="submit" hidden>
                 </label>                              
               </form>
@@ -24,7 +31,7 @@
               <form class="" action="#" method="post">
                 <div class="row">
                   <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-                    <label for="Storename">Store name:</label><br>
+                    <label id='name' class="langlao" for="Storename">ຊື່ສິນຄ້າ:</label>
                   </div>
                   <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
                     <input type="text" name="" id="storename" value="">
@@ -32,66 +39,66 @@
                 </div>
                 <div class="row">
                   <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-                    <label for="ownername">Ownername:</label><br>
+                    <label id='ownername' class="langlao" for="ownername">ລະຫັດສິນຄ້າ:</label><br>
                   </div>
                   <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
-                    <input type="text" name="" id="ownername" value="">
+                    <input type="text" name="" value="">
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-                    <label for="contactdetails">contactdetails:</label><br>
+                    <label id='contactdetails' class="langlao" for="contactdetails">ຂໍ້ມູນຕິດຕໍ່:</label><br>
                   </div>
                   <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
-                    <input type="text" name="" id="contactdetails" value="">
+                    <input type="text" name=""  value="">
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-                    <label for="phone">phone:</label><br>
+                    <label id="phonecontact" class="langlao" for="phone">ເບີໂທລະສັບ:</label><br>
                   </div>
                   <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
-                    <input type="text" name="" id="phone" value="">
+                    <input type="text" name=""  value="">
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-                    <label for="gps">GPS Location:</label><br>
+                    <label id="gpslocation" class="langlao" for="gps">ສະຖານທີ່ຕັ້ງ:</label><br>
                   </div>
                   <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
-                    <input type="text" name="" id="gpslocation" value="">
+                    <input type="text" name=""  value="">
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-                    <label for="description">description:</label><br>
+                    <label id="description" class="langlao" for="description">ເນື້ອໃນສິນຄ້າ:</label><br>
                   </div>
                   <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
-                    <input type="text" name="" id="description" value="">
+                    <input type="text" name=""  value="">
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-                    <label for="score">score:</label><br>
+                    <label id="score" class="langlao" for="score">ຄະແນນ:</label><br>
                   </div>
                   <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
-                    <input type="text" name="" id="score" value="">
+                    <input type="text" name="" value="">
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-                    <label for="otherlink">other link:</label><br>
+                    <label id="otherlink" class="langlao" for="otherlink">ຂໍ້ມູນອື່ນໆ:</label><br>
                   </div>
                   <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
-                    <input type="text" name="" id="otherlink" value="">
+                    <input type="text" name="" value="">
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-                    <label for="website">Website:</label><br>
+                    <label id="website" class="langlao" for="website">ເວັບໄຊທ໌:</label><br>
                   </div>
                   <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
-                    <input type="text" name="" id="website" value="">
+                    <input type="text" name="" value="">
                   </div>
                 </div>
               </form>

@@ -1,9 +1,15 @@
 <?php include 'type.php'; ?>
 <?php include 'header.php'; ?>
-
-<div class="container-fluid">
+  <script src="js/changelang_admin.js">
+      loadDetails();
+      loadList();
+      reload();
+      loadLA();
+      loadEN();      
+  </script>
+<div class="container-fluid mt-6">
   <div class="container">
-    <h1 class="text-center mt-5">Admin aprove list</h1>
+    <h1 id='listproduct' class="text-center mt-5 langlao">ລາຍການສິນຄ້າ</h1>
     <div class="col-xl-12">
       <div class="row">
           <div class="col-xl-12 col-xl-offset-0" style="margin-top:30px;">

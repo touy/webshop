@@ -1,3 +1,4 @@
+<?php include 'type.php' ?>
 <?php include 'header.php'; ?>
 <!doctype html>
 <html lang="en">
@@ -9,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title></title>
+    <title>product detail</title>
     <script src="ckeditor/ckeditor.js"></script>
     <style media="screen">
       .button{
@@ -39,15 +40,24 @@
         box-shadow: 0 0 0 #f64e30;
       }
     </style>
+    <script src="js/changelang_productdetails.js">
+      loadDetails();
+      loadList();
+      reload();
+      loadLA();
+      loadEN();
+    </script>    
   </head>
   <body>
 
     <div class="container-fluid">
       <div class="container"> <br>
-        <h2 class="text-center">Product details</h2>
+      <br/>
+      <br/>
+        <h2 class="text-center langlao" id='title1'>ລາຍລະອຽດສິນຄ້າ</h2>
         <div class="row">
           <div class="go-t0-store">
-            <a href="index.php" class="button"> <span class="btn-go-to-store">Go to Store</span> </a>
+            <a href="index.php" class="button" id="btntostore"> <span class="btn-go-to-store">Go to Store</span> </a>
           </div>
           <div class="col-xl-12" style="margin-top:30px;">
             <div class="row">
@@ -99,8 +109,6 @@
     </div>
 
     <?php include 'footer.php'; ?>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
   </body>
 </html>

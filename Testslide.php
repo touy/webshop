@@ -106,8 +106,7 @@
         <div class="slide-image1">
             <div class="row">
                 <div class="col-md-9 hidden-xs mt-5 mb-5">
-                    <h3>
-                        Carousel Product Cart Slider</h3>
+                    <h3 class="langlao">ອຸປະກອນແລະເຄື່ອງໃຊ້ໄຟຟ້າ</h3>
                 </div>
                 <div class="col-md-3">
                     <!-- Controls -->
@@ -388,8 +387,7 @@
         <div class="slide-image-big mt-4">
             <div class="row">
                 <div class="col-md-9 hidden-xs mt-5 mb-5">
-                    <h3>
-                        Carousel Product Cart Slider</h3>
+                    <h3 class="langlao">ໂຊຟາແລະເຄືອງຕົບແຕ່ງພາຍໃນ</h3>
                 </div>
                 <div class="col-md-3">
                     <!-- Controls -->

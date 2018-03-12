@@ -1,16 +1,23 @@
 <?php include 'header.php' ?>
 <?php include 'type.php'; ?>
-<style media="screen">
-  .row {margin-top:20px;}
+  <script src="js/changelang_admin_promotion_ads.js">
+        loadDetails();
+        loadList();
+        reload();
+        loadLA();
+        loadEN();
+  </script>
+<style>
+  label, input {margin-top:14px;}
 </style>
-<div class="container-fluid">
+<div class="container-fluid mt-6">
   <div class="container">
-    <h1 class="text-center" style="margin-top:30px;">Admin promotion ads</h1>
+    <h1 id='titlePromotionEN' class="text-center langlao" style="margin-top:30px;">ໂປຣໂມຊັ້ນ</h1>
     <div class="row">
       <div class="col-xl-6 offset-xl-3" style=" margin-top:20px;">
         <div class="row">
           <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-            <label for="Storename">Itemname:</label><br>
+            <label class="langlao" for="Storename">ຊື່ສິນຄ້າ:</label><br>
           </div>
           <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
             <input type="text" name="" value="">
@@ -18,7 +25,7 @@
         </div>
         <div class="row">
           <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-            <label for="Storename">Price:</label><br>
+            <label id='priceEN' class="langlao" for="Storename">ລາຄາ:</label><br>
           </div>
           <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
             <input type="text" name="" value="">
@@ -26,7 +33,7 @@
         </div>
         <div class="row">
           <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-            <label for="Storename">Score:</label><br>
+            <label id='scoreEN' class="langlao" for="Storename">ຄະແນນ:</label><br>
           </div>
           <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
             <input type="text" name="" value="">
@@ -34,7 +41,7 @@
         </div>
         <div class="row">
           <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-            <label for="Storename">Description:</label><br>
+            <label id='descriptionEN' class="langlao" for="Storename">ເນື້ອໃນສິນຄ້າ:</label><br>
           </div>
           <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
             <input type="text" name="" value="">
@@ -42,10 +49,10 @@
         </div>
         <div class="row" style="margin-top:30px;">
           <div class="col-xl-4 col-lg-2 col-md-2  col-6">
-            <a href="#" class="button_profile2"> <span class="btn-go-to-store langlao">Save</span> </a>
+            <a href="#" class="button_profile2"> <span class="btn-go-to-store langlao">ບັນທຶກ</span> </a>
           </div>
           <div class="col-xl-4 col-lg-2 col-md-2  col-6">
-            <a href="#" class="button_profile2"> <span class="btn-go-to-store langlao">Cancle</span> </a>
+            <a href="#" class="button_profile2"> <span class="btn-go-to-store langlao">ຍົກເລີກ</span> </a>
           </div>
         </div>
       </div>

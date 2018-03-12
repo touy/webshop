@@ -1,4 +1,4 @@
-
+<link rel="stylesheet" href="css/newbootstrap.css">
 <style type="text/css">
     *{
         padding:0px;
@@ -11,7 +11,8 @@
         overflow:hidden;
     }
     .leftside{
-        position:absolute;        
+        /* position:absolute;    */
+        float:right;     
     }
     .leftside li{
         list-style-type: none;
@@ -51,7 +52,7 @@
     }
 </style>
 
-<div class="row">
+<div class="row hidden-xs">
     <div class="leftside hidden-md hidden-sm hidden-xs">
         <ul>
             <a href="https://www.facebook.com/" class="bg_facebook"><li  style="border-top:2px solid !important; border-color:red !important;"><i class="text-center fab fa-facebook-square"></i></li></a>

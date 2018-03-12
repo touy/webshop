@@ -78,11 +78,18 @@
 
     </style>
   </head>
+    <script src="js/changelang_client_product_detail.js">
+      loadDetails();
+      loadList();
+      reload();
+      loadLA();
+      loadEN();        
+    </script>
   <body>
 
-    <div class="container-fluid">
+    <div class="container-fluid mt-5">
       <div class="container"> <br>
-        <h2 class="text-center">Client Product Detail</h2> 
+        <h2 id='titleproductdetails' class="text-center langlao">ຂໍ້ມູນສິນຄ້າ ຂອງລູກຄ້າ</h2> 
         <div class="row">
           <div class="go-t0-store">
             <a href="#" class="button"> <span class="btn-go-to-store">Go to Store</span> </a>
@@ -94,10 +101,10 @@
                   <div class="col-xl-7 col-lg-7 col-12">
                     <a href="#"> <img src="images/2.png" alt="" style="width:100%;"> </a>
                     <form class="form-group" id="formupload" class="uploadImage" enctype="multipart/form-data" action="http://nonav.net:4000/upload_img" method="POST">
-                      <label class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Upload photo 
+                      <label id='uploadphoto'  class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover langlao" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;"><i class="fas fa-cloud-upload-alt"></i> ອັບໂຫລດ ຮູບພາບ 
                         <input type="file" name="file_up" id="file_up" hidden>
                       </label>
-                      <label class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">Save 
+                      <label id='save' class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover langlao" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;"><i class="far fa-save"></i> ບັນທຶກ
                         <input type="submit" name="submit" hidden>
                       </label>                              
                     </form>
@@ -106,7 +113,7 @@
                       <form class="form-inline">
                       <div class="col-xl-4" style="margin-top:20px;">
                           <div class="form-group" style="padding:0; margin:0;">
-                            <label for="item_price">Itemname:</label>
+                            <label id='itemname' class="langlao" for="item_price">ຊື່ສິນຄ້າ:</label>
                           </div>
                         </div>
                         <div class="col-xl-8 input_store">
@@ -115,7 +122,7 @@
 
                         <div class="col-xl-4 col-md-12" style="margin-top:20px;">
                           <div class="form-group" style="padding:0; margin:0;">
-                            <label for="item_price">Price:</label>
+                            <label id='price' class="langlao" for="item_price">ລາຄາ:</label>
                           </div>
                         </div>
                         <div class="col-xl-8 col-md-12 input_store">
@@ -124,7 +131,7 @@
 
                         <div class="col-xl-4" style="margin-top:20px;">
                           <div class="form-group" style="padding:0; margin:0;">
-                            <label for="item_price">Score:</label>
+                            <label id='score' class="langlao" for="item_price">ຄະແນນ:</label>
                           </div>
                         </div>
                         <div class="col-xl-8 input_store">
