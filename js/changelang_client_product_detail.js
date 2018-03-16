@@ -36,9 +36,36 @@ function reload() {
 
 function loadLA() {
     lang = 'la';
-    $('#house').text('Home');
+    $('#titleproductdetails').text('Product details');
+    $('#itemname').text('ຊື່ສິນຄ້າ  ');
+    $('#price').text('ລາຄາ');
+    $('#score').text('ລາຄາ');
+
+    $("#uploadphoto").html('<input type="file" name="file_up" id="file_up" hidden>');
+    $("#uploadphoto").append('<i class="fas fa-cloud-upload-alt"></i>');
+    $('#uploadphoto').append(' ອັບໂຫລດຮູບພາບ');
+
+    $("#save").html('<input type="submit" name="submit" id="submit" hidden>');
+    $("#save").append('<i class="far fa-save"></i>');
+    $('#save').append(' ບັນທຶກ');
+
+    $("#save2").html('<input type="submit" name="submit" id="submit" hidden>');
+    $('#save2').append('ບັນທຶກ ');
+    $("#save2").append('<i class="far fa-save ml-1"> </i>');
+
+    $("#cancle2").html('<input type="submit" name="submit" id="submit" hidden>');
+    $('#cancle2').append('ຍົກເລີກ ');
+    $("#cancle2").append(' <i class="far fa-times-circle ml-1"></i>');
     // $('#btntostore').text('ໄປທີ່ຮ້ານຄ້າ');
     //alert($('title1').text());
+    $('#home').text('ຫນ້າທຳອິດ');
+    $('#store').text('ຮ້ານຄ້າ');
+    $('#product').text('ສຶນຄ້າ');
+    $('#about').text('ກ່ຽວກັບພວກເຮົາ');
+    $("#pleaseLogin").html('<i class="fas fa-sign-in-alt"></i>');
+    $('#pleaseLogin').append(' ເຂົ້າສູ່ລະບົບ');
+    $('#login').text('ລ໋ອກອິນ');
+    $('#register').text('ລົງທະບຽນ');
 }
 
 function loadEN() {
@@ -55,15 +82,24 @@ function loadEN() {
     $("#save").html('<input type="submit" name="submit" id="submit" hidden>');
     $("#save").append('<i class="far fa-save"></i>');
     $('#save').append(' Save');
-    //.........*******........
+
+    $("#save2").html('<input type="submit" name="submit" id="submit" hidden>');
+    $('#save2').append(' Save');
+    $("#save2").append(' <i class="far fa-save ml-1"></i>');
+
+    $("#cancle2").html('<input type="submit" name="submit" id="submit" hidden>');
+    $('#cancle2').append('Cancle ');
+    $("#cancle2").append(' <i class="far fa-times-circle ml-1"></i>');
+    //.........*******........  
+    //alert($('title1').text());
     $('#home').text('Home');
     $('#store').text('Store');
     $('#product').text('Product');
     $('#about').text('About');
-    $('#pleaseLogin').text('Please Login');
+    $("#pleaseLogin").html('<i class="fas fa-sign-in-alt"></i>');
+    $('#pleaseLogin').append(' Please Login');
     $('#login').text('Login');
     $('#register').text('Register');
-    //alert($('title1').text());
 
 
 }

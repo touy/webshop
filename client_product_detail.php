@@ -92,7 +92,7 @@
         <h2 id='titleproductdetails' class="text-center langlao">ຂໍ້ມູນສິນຄ້າ ຂອງລູກຄ້າ</h2> 
         <div class="row">
           <div class="go-t0-store">
-            <a href="#" class="button"> <span class="btn-go-to-store">Go to Store</span> </a>
+            <a href="#" class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover langlao" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;"><i class="fas fa-arrow-circle-left"></i> ກັບໄປທີ່ຮ້ານຄ້າ</a>
           </div>
           <div class="" style="margin-top:30px;">
             <div class="row">
@@ -141,11 +141,15 @@
                           <input type="text" id="#" class="form-control" placeholder="Item code" style="width:100%;">
                         </div>
 
-                        <div class="go-t0-store2 jdk" style="margin-top:20px; margin-left:40px;">
-                          <a href="#" class="button2"> <span class="btn-go-to-store2">Save</span> </a>
+                        <div class="mt-3 ml-3">
+                          <label id='save2' class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover langlao" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">ບັນທຶກ <i class="far fa-save ml-1"></i>
+                            <input type="submit" name="submit" hidden>
+                          </label>
                         </div>
-                        <div class="go-t0-store2" style="margin-top:20px; margin-left:30px;">
-                          <a href="login_frm.php" class="button2"> <span class="btn-go-to-store2">Cancel</span> </a>
+                        <div class="mt-3 ml-3">
+                          <label id='cancle2' class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover langlao" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">ຍົກເລີກ <i class="far fa-times-circle ml-1"></i>
+                            <input type="reset" name="reset" hidden>
+                          </label>
                         </div>
                       </form>
                   </div>
@@ -168,7 +172,9 @@
                       CKEDITOR.replace( 'editor1' );
                   </script>
                   <div class="go-t0-store" style="margin-top:30px;margin-bottom:10px;">
-                    <a href="" class="button"> <span class="btn-go-to-store langlao">ອັບໂຫລດ</span> </a>
+                    <label id=''  class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover langlao" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;"><i class="fas fa-cloud-upload-alt"></i> ອັບໂຫລດ
+                        <input type="submit" name="submit" hidden>
+                    </label>
                   </div>
                 </form>
 
@@ -180,7 +186,9 @@
                       CKEDITOR.replace( 'editor2' );
                   </script>
                   <div class="go-t0-store" style="margin-top:30px;margin-bottom:10px;">
-                    <a href="" class="button"> <span class="btn-go-to-store langlao">ອັບໂຫລດ</span> </a>
+                    <label id=''  class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover langlao" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;"><i class="fas fa-cloud-upload-alt"></i> ອັບໂຫລດ
+                        <input type="submit" name="submit" hidden>
+                    </label>
                   </div>
                 </form>
               </div>

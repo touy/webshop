@@ -3,15 +3,22 @@
 <style>
   label, input {margin-top:14px;}
 </style>
+<script src="js/chnagelang_admin_search_keyword.js">
+  loadDetails();
+  loadList();
+  reload();
+  loadLA();
+  loadEN(); 
+</script>
 <div class="container-fluid">
   <div class="container">
-    <h1 class="text-center" style="margin:30px;">Admin search keyword list for ads</h1>
+    <h1 id='title_admin' class="text-center langlao" style="margin:30px;">ໜ້າຄວບຄຸມ</h1>
     <div class="row" style="margin-top:-40px;">
       <div class=" col-xl-6 col-12" style="float:right; margin-top:40px; align:center;">
         <form class="" action="#" method="post">
           <div class="row">
             <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-              <label class="langlao" for="Storename">ລະຫັດສິນຄ້າ:</label><br>
+              <label id='key_product' class="langlao" for="Storename">ລະຫັດສິນຄ້າ:</label><br>
             </div>
             <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
               <input type="text" name="" value="">
@@ -19,7 +26,7 @@
           </div>
           <div class="row">
             <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-              <label class="langlao" for="Storename">ເລີ່ມວັນທີ:</label><br>
+              <label id='st_date' class="langlao" for="Storename">ເລີ່ມວັນທີ:</label><br>
             </div>
             <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
               <input type="text" name="" value="">
@@ -27,7 +34,7 @@
           </div>
           <div class="row">
             <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-              <label class="langlao" for="Storename">ສິ້ນສຸດວັນທີ:</label><br>
+              <label id='end_date' class="langlao" for="Storename">ສິ້ນສຸດວັນທີ:</label><br>
             </div>
             <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
               <input type="text" name="" value="">
@@ -35,7 +42,7 @@
           </div>
           <div class="row">
             <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-              <label class="langlao" for="Storename">ຊື່ສິນຄ້າ:</label><br>
+              <label id='name_product' class="langlao" for="Storename">ຊື່ສິນຄ້າ:</label><br>
             </div>
             <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
               <input type="text" name="" value="">
@@ -43,7 +50,7 @@
           </div>
           <div class="row">
             <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-              <label class="langlao" for="Storename">ຊື່ເດີມ:</label><br>
+              <label id='old_name' class="langlao" for="Storename">ຊື່ເດີມ:</label><br>
             </div>
             <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
               <input type="text" name="" value="">
@@ -51,7 +58,7 @@
           </div>
           <div class="row">
             <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-              <label class="langlao" for="Storename">ຄະແນນ:</label><br>
+              <label id='score' class="langlao" for="Storename">ຄະແນນ:</label><br>
             </div>
             <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
               <input type="text" name="" value="">
@@ -84,7 +91,7 @@
                 <a class="" href="#"><i class="text-center fas fa-plus-circle"></i></a>
                 <a class="" href="#"><i class="text-center far fa-save" style=" margin-left:30px;"></i></a>
                 <a class="" href="#"><i class="text-center far fa-trash-alt" style=" margin-left:30px;"></i></a>
-              </p>
+            </p>
         </div>
       </div>
     </div>

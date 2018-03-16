@@ -19,7 +19,7 @@
           <div class="col-xl-6" style="margin-top:20px;">
             <img class="responsive" src="images/2.png" alt="" style="width:100%; ">
             <form class="form-group" id="formupload" class="uploadImage" enctype="multipart/form-data" action="http://nonav.net:4000/upload_img" method="POST">
-              <label id='uploadphoto' class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover langlao" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;"><i class="fas fa-cloud-upload-alt"></i> ອັບໂຫລດ ຮູບພາບ 
+              <label id='uploadphoto' class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover langlao" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;"><i class="fas fa-cloud-upload-alt"></i> ອັບໂຫລດຮູບພາບ 
                 <input type="file" name="file_up" id="file_up" hidden>
               </label>
               <label id='save' class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover langlao" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;"><i class="far fa-save"></i> ບັນທຶກ 
@@ -38,7 +38,7 @@
             </div>
             <div class="row">
               <div class="col-xl-4 col-lg-2 col-md-3 col-12">
-                <label id='priceproduct' class="langlao" for="totalscore">ລາຄາສິນຄ້າ</label><br>
+                <label id='priceproduct' class="langlao" for="totalscore">ລາຄາສິນຄ້າ:</label><br>
               </div>
               <div class="col-xl-8 col-lg-10 col-md-9 col-12 input_store">
                 <input type="text" name="" value="">

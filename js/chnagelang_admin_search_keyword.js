@@ -36,34 +36,33 @@ function reload() {
 
 function loadLA() {
     lang = 'la';
-    $('#titleregisterEN').text('ສະໝັກສະມາຊິກ');
-    $('#nameEN').text('ຊື່:');
-    $('#phonecontactEN').text('ເບີໂທລະສັບ:');
-    $('#passwordEN').text('ລະຫັດຜ່ານ:');
-    $('#confirmpasswordEN').text('ຢັ້ງຢືນລະຫັດຜ່ານ:');
-    $("#submitEN").html('<i class="fa fa-user-plus"></i>');
-    $('#submitEN').append(' ຕົກລົງ');
-    // $('#submitEN').text('ຕົກລົງ');
+    $('#title_admin').text('ໜ້າຄວບຄຸມ   ');
+    $('#key_product').text('ລະຫັດສິນຄ້າ:');
+    $('#st_date').text('ເລີ່ມວັນທີ:');
+    $('#end_date').text('ສິ້ນສຸດວັນທີ:');
+    $('#name_product').text('ຊື່ສິນຄ້າ:');
+    $('#old_name').text('ຊື່ເດີມ:');
+    $('#score').text('ຄະແນນ:');
     // $('#btntostore').text('ໄປທີ່ຮ້ານຄ້າ');
     //alert($('title1').text());
 }
 
 function loadEN() {
     lang = 'en';
-    $('#titleregisterEN').text('Register');
-    $('#nameEN').text('Name:');
-    $('#phonecontactEN').text('Phone:');
-    $('#passwordEN').text('Password:');
-    $('#confirmpasswordEN').text('Confirm password:');
-    $("#submitEN").html('<i class="fa fa-user-plus"></i>');
-    $('#submitEN').append(' Submit');
-
+    $('#title_admin').text('Search Admin Keyword ads');
+    $('#key_product').text('Name:');
+    $('#st_date').text('Start:');
+    $('#end_date').text('End:');
+    $('#name_product').text('Name:');
+    $('#old_name').text('OldName:');
+    $('#score').text('Score:');
     //alert($('title1').text());
     $('#home').text('Home');
     $('#store').text('Store');
     $('#product').text('Product');
     $('#about').text('About');
-    $('#pleaseLogin').text('Please Login');
+    $("#pleaseLogin").html('<i class="fas fa-sign-in-alt"></i>');
+    $('#pleaseLogin').append(' Please Login');
     $('#login').text('Login');
     $('#register').text('Register');
 }

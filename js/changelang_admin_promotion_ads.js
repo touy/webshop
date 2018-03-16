@@ -44,6 +44,7 @@ function loadLA() {
 function loadEN() {
     lang = 'en';
     $('#titlePromotionEN').text('Promotion');
+    $('#nameproductEN').text('Name:');
     $('#priceEN').text('Price:');
     $('#scoreEN').text('Score:');
     $('#descriptionEN').text('Description:');
@@ -52,7 +53,8 @@ function loadEN() {
     $('#store').text('Store');
     $('#product').text('Product');
     $('#about').text('About');
-    $('#pleaseLogin').text('Please Login');
+    $("#pleaseLogin").html('<i class="fas fa-sign-in-alt"></i>');
+    $('#pleaseLogin').append(' Please Login');
     $('#login').text('Login');
     $('#register').text('Register');
 }

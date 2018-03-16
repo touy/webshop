@@ -113,7 +113,9 @@
               </script>
             </div>
             <div class="col-xl-6" style="float:left; margin-top:15px;">
-              <a href="#" class="button_profile2"> <span class="btn-go-to-store langlao">ບັນທຶກ</span> </a>
+              <label id='' class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover langlao" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;">ບັນທຶກ <i class="far fa-save"></i>
+                <input type="submit" name="submit" hidden>
+              </label>
             </div>
           </div>
         </div>

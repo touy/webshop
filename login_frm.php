@@ -71,7 +71,7 @@
                 <div class="row" style="padding-top: 1rem">
                     <div class="col-md-4 col-sm-2 col-xs-2 col-2"></div>
                     <div class="col-md-8 col-sm-10 col-xs-10 col-10">
-                      <a href="index.php"><button2 id='backtoindexEN' type="" class="btn btn-success buttonhover langlao" style="background-color:#34219f;"><i class="fas fa-hand-point-left"></i> ກັບໜ້າທຳອິດ </button2></a>
+                      <a href="showads.php"><button2 id='backtoindexEN' type="" class="btn btn-success buttonhover langlao" style="background-color:#34219f;"><i class="fas fa-hand-point-left"></i> ກັບໜ້າທຳອິດ </button2></a>
                     </div>
                 </div>
         </form>

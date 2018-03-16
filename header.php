@@ -1,10 +1,10 @@
-<script src="js/changelang_header.js">
-        loadDetails();
-        loadList();
-        reload();
-        loadLA();
-        loadEN();
-    </script>
+  <script src="js/changelang_header.js">
+    loadDetails();
+    loadList();
+    reload();
+    loadLA();
+    loadEN();
+  </script>
   <div class="container-fluid fixed-top" style="background-color:#34219f; !important; border-bottom:2px solid; border-color:#fb3c00 !important; border-top:30px solid; border-left:none; border-right:none;">
     <div class="icon_language float-right">
       <a href="#" onclick='loadLA()'><img src="images/Flag of Laos.png" alt="" style="width:30px; height:30px;"></a>
@@ -35,7 +35,7 @@
               </a>
               <div class="dropdown-menu " aria-labelledby="navbarDropdown" style="border:none;">
                 <a id='login' class="dropdown-item langlao" href="login_frm.php">ລ໋ອກອິນ</a>
-                <a id='register' class="dropdown-item langlao" href="#">ລົງທະບຽນ</a>
+                <a id='register' class="dropdown-item langlao" href="register.php">ລົງທະບຽນ</a>
               </div>
             </li>
           </ul>

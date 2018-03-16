@@ -17,7 +17,7 @@
       <div class="col-xl-6 offset-xl-3" style=" margin-top:20px;">
         <div class="row">
           <div class="col-xl-3 col-lg-2 col-md-3 col-12">
-            <label class="langlao" for="Storename">ຊື່ສິນຄ້າ:</label><br>
+            <label id='nameproductEN' class="langlao" for="Storename">ຊື່ສິນຄ້າ:</label><br>
           </div>
           <div class="col-xl-9 col-lg-10 col-md-9 col-12 input_store">
             <input type="text" name="" value="">
@@ -49,16 +49,20 @@
         </div>
         <div class="row" style="margin-top:30px;">
           <div class="col-xl-4 col-lg-2 col-md-2  col-6">
-            <a href="#" class="button_profile2"> <span class="btn-go-to-store langlao">ບັນທຶກ</span> </a>
+            <label id='' class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover langlao" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;"><i class="far fa-save"></i> ບັນທຶກ
+              <input type="submit" name="submit" hidden>
+            </label>
           </div>
           <div class="col-xl-4 col-lg-2 col-md-2  col-6">
-            <a href="#" class="button_profile2"> <span class="btn-go-to-store langlao">ຍົກເລີກ</span> </a>
+            <label id='' class="btn btn-info border-top-0 border-left-0 border-right-0 buttonhover langlao" style="background-color:#34219f; border:2px solid; border-color:#fb3c00; margin-top:5px;"><i class="far fa-times-circle"></i> ຍົກເລີກ
+              <input type="reset" name="reset" hidden>
+            </label>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row mt-4">
       <div class="col-xl-12">
         <div class="icon_edit">
           <div class="">

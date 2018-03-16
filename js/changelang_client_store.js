@@ -36,7 +36,25 @@ function reload() {
 
 function loadLA() {
     lang = 'la';
-    $('#house').text('Home');
+    $('#titleStore').text('Store');
+
+    $("#uploadphoto").html('<input type="file" name="file_up" id="file_up" hidden>');
+    $("#uploadphoto").append('<i class="fas fa-cloud-upload-alt"></i>');
+    $('#uploadphoto').append(' ອັບໂຫລດຮູບພາບ');
+
+    $("#save").html('<input type="submit" name="submit" id="submit" hidden>');
+    $("#save").append('<i class="far fa-save"></i>');
+    $('#save').append(' ບັນທຶກ');
+
+    $('#name').text('ຊື່ສິນຄ້າ:');
+    $('#ownername').text('ລະຫັດສິນຄ້າ:');
+    $('#contactdetails').text('ຂໍ້ມູນຕິດຕໍ່:');
+    $('#phonecontact').text('ເບີໂທລະສັບ:');
+    $('#gpslocation').text('ສະຖານທີ່ຕັ້ງ:');
+    $('#description').text('ເນື້ອໃນສິນຄ້າ:');
+    $('#score').text('ຄະແນນ:');
+    $('#otherlink').text('ຂໍ້ມູນອື່ນໆ:');
+    $('#website').text('ເວັບໄຊທ໌:');
     // $('#btntostore').text('ໄປທີ່ຮ້ານຄ້າ');
     //alert($('title1').text());
 }
@@ -52,6 +70,7 @@ function loadEN() {
     $("#save").html('<input type="submit" name="submit" id="submit" hidden>');
     $("#save").append('<i class="far fa-save"></i>');
     $('#save').append(' Save');
+
     $('#name').text('Name:');
     $('#ownername').text('Ownername:');
     $('#contactdetails').text('Contact:');
@@ -66,7 +85,8 @@ function loadEN() {
     $('#store').text('Store');
     $('#product').text('Product');
     $('#about').text('About');
-    $('#pleaseLogin').text('Please Login');
+    $("#pleaseLogin").html('<i class="fas fa-sign-in-alt"></i>');
+    $('#pleaseLogin').append(' Please Login');
     $('#login').text('Login');
     $('#register').text('Register');
 }

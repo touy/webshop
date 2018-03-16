@@ -86,7 +86,7 @@
         @media (min-width: 768px) and (max-width: 991px) {
         .TV{ height:130px !important;} }
 
-        .photo ,img{height:100%; width:100%;}
+        .photo img{height:90%; width:100%;}
     /* .ferniture{ height:120px;} */
          /* @media (min-width: 992px) and (max-width: 1199px) {
         .TV{ height:160 !important; } } */

@@ -29,7 +29,7 @@
             </div>
             <div class="col-md-8 font-size-icon">
                 <div class="form-group">
-                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0" id="show_hide_password">
                         <div class="input-group-addon" style="width: 2.6rem"><i class="fas fa-key"></i></div>
                         <input type="password" name="password" class="form-control langlao" id="oldpassword"
                                placeholder="Old Password" required autofocus>
@@ -44,7 +44,7 @@
             <div class="col-md-4 field-label-responsive">
                 <label id='newpasswordEN' class="langlao" for="newpassword">ລະຫັດຜ່ານໃໝ່:</label>
             </div>
-            <div class="col-md-8 font-size-icon" >
+            <div class="col-md-8 font-size-icon" id="show_hide_password">
                 <div class="form-group">
                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                         <div class="input-group-addon" style="width: 2.6rem"><i class="fas fa-key"></i></div>
@@ -86,7 +86,7 @@
             </div>
             <div class="col-md-8 font-size-icon">
                 <div class="form-group">
-                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0" id="show_hide_password">
                         <div class="input-group-addon" style="width: 2.6rem">
                             <i class="fas fa-redo"></i>
                         </div>
