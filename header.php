@@ -44,4 +44,4 @@
     <!-- <div class="social_media"><?php include 'social_leftside.php'; ?></div>     -->
   </div>
 
-  <div class="class-fixed-top" style="height:121px;"></div>
+  <div class="class-fixed-top" style="height:122px;"></div>
