@@ -11,7 +11,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/newbootstrap.css">
-    <!-- <link rel="stylesheet" href="css/bootstrapnew.css"> -->
     <link rel="stylesheet" href="lightbox/css/lightbox.css">
     <link rel="stylesheet" href="css/styleslide.css">  
     <!-- <script>

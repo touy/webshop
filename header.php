@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse header_drop" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a id='home' class="nav-link langlao" href="index.php" >ໜ້າທຳອິດ <span class="sr-only">(current)</span></a>
+              <a id='home' class="nav-link langlao" href="showads.php" >ໜ້າທຳອິດ <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item"><a id='store' class="nav-link langlao" href="store.php">ຮ້ານຄ້າ</a></li>
             <li class="nav-item"><a id='product' class="nav-link langlao" href="productdetails.php">ສິນຄ້າ</a></li>
@@ -31,11 +31,10 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown">
               <a id='pleaseLogin' class="nav-link dropdown-toggle langlao" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-sign-in-alt" style="margin-right:3px;"></i>ເຂົ້າສູ່ລະບົບ
-              </a>
+              <i class="fa fa-user ml-1" style="margin-right:3px;"></i>ບັນຊີ</a>
               <div class="dropdown-menu " aria-labelledby="navbarDropdown" style="border:none;">
-                <a id='login' class="dropdown-item langlao" href="login_frm.php">ລ໋ອກອິນ</a>
-                <a id='register' class="dropdown-item langlao" href="register.php">ລົງທະບຽນ</a>
+                <a id='login' class="dropdown-item langlao" href="login_frm.php"><i class="fa fa-key mr-2" aria-hidden="true"></i>ລ໋ອກອິນ</a>
+                <a id='register' class="dropdown-item langlao" href="register.php"><i class="fas fa-user-plus mr-2"></i>ລົງທະບຽນ</a>
               </div>
             </li>
           </ul>
@@ -44,5 +43,5 @@
     </div>
     <!-- <div class="social_media"><?php include 'social_leftside.php'; ?></div>     -->
   </div>
-  
-  <div class="class-fixed-top" style="height:120px;"></div>
+
+  <div class="class-fixed-top" style="height:121px;"></div>
